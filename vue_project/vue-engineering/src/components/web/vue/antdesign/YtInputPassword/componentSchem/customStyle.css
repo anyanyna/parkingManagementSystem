@@ -1,0 +1,165 @@
+/* formItem */
+.__customFormItemClassName__{
+  opacity: '__opacity__';
+  flex-direction:'__flexDirection__';
+}
+.__customFormItemClassName__ .ant-form-item-explain {
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+}
+.__customFormItemClassName__ .ant-form-item-label label {
+  text-decoration: '__labelText.textDecoration__';
+  font-style: '__labelText.textStyle__';
+  color: '__labelText.fontStyle.color__';
+  font-family: '__labelText.fontFamily__';
+  font-size: '__labelText.fontSize__';
+  font-weight: '__labelText.fontWeight__';
+  width:'__labelWidth__';
+  padding-top: '__labelText.paddingTop__';
+  padding-right: '__labelText.paddingRight__';
+  padding-bottom: '__labelText.paddingBottom__';
+  padding-left: '__labelText.paddingLeft__';
+}
+.__customFormItemClassName__ .ant-form-item-label label .label-content {
+  text-align: '__labelText.textAlign__';
+  text-align-last: '__labelText.textAlign__';
+}
+/* 组件 */
+.__customClassName__ {
+  background: '__fill.background__ !important';
+  border-top-left-radius: '__radius.borderTopLeftRadius__';
+  border-top-right-radius: '__radius.borderTopRightRadius__';
+  border-bottom-left-radius: '__radius.borderBottomLeftRadius__';
+  border-bottom-right-radius: '__radius.borderBottomRightRadius__';
+  border-top: '__border.borderTop__';
+  border-right: '__border.borderRight__';
+  border-bottom: '__border.borderBottom__';
+  border-left: ' __border.borderLeft__';
+  box-shadow: '__shadow.boxShadow__';
+  padding-top: '__text.paddingTop__';
+  padding-right: '__text.paddingRight__';
+  padding-bottom: '__text.paddingBottom__';
+  padding-left: '__text.paddingLeft__';
+}
+
+.__customClassName__ input.ant-input {
+  color: '__text.fontStyle.color__';
+  font-family: '__text.fontFamily__';
+  font-size: ' __text.fontSize__';
+  font-weight: '__text.fontWeight__';
+  line-height: '__text.lineHeight__';
+  letter-spacing: '__text.letterSpacing__';
+  vertical-align: '__text.verticalAlign__';
+  text-decoration: '__text.textDecoration__';
+  font-style: '__text.textStyle__';
+  text-align: '__text.textAlign__';
+  text-align-last: '__text.textAlign__';
+}
+.__customClassName__ input::placeholder,
+.__customClassName__ input::-webkit-input-placeholder{
+  color: '__placeholderColor.color__';
+}
+#default_start
+.__customFormItemClassName__{
+  opacity: 1;
+  flex-direction: row;
+}
+.__customFormItemClassName__ .ant-form-item-label label{
+  text-decoration: none;
+  font-style: normal;
+  color: #333333;
+  font-family: Microsoft YaHei;
+  font-size: 14px;
+  font-weight: Normal;
+  padding-top: 4px;
+  padding-right: 0px;
+  padding-bottom: 6px;
+  padding-left: 0px;
+}
+.__customFormItemClassName__ .ant-form-item-label label .label-content{
+  text-align: left;
+  text-align-last: left;
+}
+.__customClassName__{
+  background: #FFFFFF;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top: 1px solid #CDCDCD;
+  border-right: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+  border-left: 1px solid #CDCDCD;
+  box-shadow: 0px 0px 0px 0px transparent;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 12px;
+}
+.__customClassName__ input.ant-input{
+  color: #333333;
+  font-family: Microsoft YaHei;
+  font-size: 14px;
+  font-weight: Normal;
+  line-height: undefined;
+  letter-spacing: undefined;
+  vertical-align: undefined;
+  text-decoration: none;
+  font-style: normal;
+  text-align: left;
+  text-align-last: left;
+}
+.__customClassName__ input::placeholder,.__customClassName__ input::-webkit-input-placeholder{
+  color: #999999;
+}
+#default_end
+
+#static_start
+.webVueAntInputPasswordFormItem  {
+  flex-wrap: nowrap;
+}
+.webVueAntInputPasswordFormItem ,
+.webVueAntInputPassword,
+.webVueAntInputPasswordFormItem .ant-form-item-control-input,
+.webVueAntInputPasswordFormItem .ant-form-item-control-input .ant-form-item-control-input-content {
+  width: 100%;
+  height: 100%;
+}
+.webVueAntInputPasswordFormItem .ant-form-item-control-input{
+  min-height: unset !important;
+}
+.webVueAntInputPasswordFormItem .ant-form-item-label {
+  flex-shrink: 0;
+  padding: 0;
+  text-align: left;
+}
+.webVueAntInputPasswordFormItem .ant-form-item-label label {
+  width: 100%;
+  height: 100%;
+}
+.webVueAntInputPasswordFormItem .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+  margin-top: 4px;
+}
+.webVueAntInputPasswordFormItem .ant-form-item-label label .label-content{
+  flex: 1;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.webVueAntInputPasswordFormItem .ant-form-item-label>label.ant-form-item-no-colon:after {
+  display: none;
+}
+.webVueAntInputPasswordFormItem .ant-form-item-label label .ant-form-item-content {
+  white-space: nowrap;
+}
+.webVueAntInputPasswordFormItem.hide-label .ant-form-item-label {
+  display: none;
+}
+.webVueAntInputPasswordFormItem .ant-form-item-content:focus{
+  outline: none;
+}
+.webVueAntInputPassword .ant-input {
+  background-color: transparent;
+}
+#static_end

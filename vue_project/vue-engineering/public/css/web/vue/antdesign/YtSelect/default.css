@@ -1,0 +1,177 @@
+
+.webVueAntYtSelectFormItem{
+flex-direction: row;
+opacity: 1;
+}
+.webVueAntYtSelectFormItem .ant-form-item-label label{
+text-decoration: none;
+font-style: normal;
+color: #333333;
+font-family: Microsoft YaHei;
+font-size: 14px;
+font-weight: Normal;
+width: 53px;
+padding-top: 0px;
+padding-right: 10px;
+padding-bottom: 0px;
+padding-left: 0px;
+}
+.webVueAntYtSelectFormItem .ant-form-item-label label .label-content{
+text-align: left;
+text-align-last: left;
+}
+.webVueAntYtSelectStyle .ant-select-selector{
+background: #FFFFFF !important;
+border-top-left-radius: 4px !important;
+border-top-right-radius: 4px !important;
+border-bottom-left-radius: 4px !important;
+border-bottom-right-radius: 4px !important;
+border-top: 1px solid #CDCDCD !important;
+border-right: 1px solid #CDCDCD !important;
+border-bottom: 1px solid #CDCDCD !important;
+border-left: 1px solid #CDCDCD !important;
+box-shadow: 0px 0px 0px 0px transparent;
+padding-top: 0px !important;
+padding-right: 10px !important;
+padding-bottom: 0px !important;
+padding-left: 12px !important;
+}
+.webVueAntYtSelectStyle.ant-select:not(.ant-select-disabled):hover .ant-select-selector,.webVueAntYtSelectStyle.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+border-right: 1px solid #CDCDCD !important;
+}
+.webVueAntYtSelectStyle .ant-select-selector .ant-select-selection-item{
+color: #333333;
+font-family: Microsoft YaHei;
+font-size: 14px;
+font-weight: Normal !important;
+letter-spacing: 0px;
+text-decoration: none;
+font-style: normal;
+}
+.webVueAntYtSelectStyle .ant-select-selector .ant-select-selection-search input{
+color: #333333;
+font-family: Microsoft YaHei;
+font-size: 14px;
+font-weight: Normal !important;
+letter-spacing: 0px;
+text-decoration: none;
+font-style: normal;
+}
+.webVueAntYtSelectStyle .ant-select-selector .ant-select-selection-placeholder{
+color: #999999;
+font-family: Microsoft YaHei;
+font-size: 14px;
+font-weight: Normal;
+letter-spacing: 0px;
+text-decoration: none;
+font-style: normal;
+}
+.popupKey.ant-select-dropdown{
+border-top-left-radius: 2px !important;
+border-top-right-radius: 2px !important;
+border-bottom-left-radius: 2px !important;
+border-bottom-right-radius: 2px !important;
+background: #ffffff !important;
+border-top: 1px solid transparent !important;
+border-right: 1px solid transparent !important;
+border-bottom: 1px solid transparent !important;
+border-left: 1px solid transparent !important;
+box-shadow: 0px 0px 10px 0px rgba(153,153,153,0.3);
+padding-top: 0px !important;
+padding-right: 0px !important;
+padding-bottom: 0px !important;
+padding-left: 0px !important;
+}
+.popupKey.ant-select-dropdown .ant-select-item{
+color: #333333;
+font-family: Microsoft YaHei;
+font-size: 14px;
+font-weight: Normal;
+letter-spacing: 0px;
+text-decoration: none;
+font-style: normal;
+}
+.popupKey.ant-select-dropdown .ant-select-item-option-selected{
+background: #E6EFFE;
+color: #333333;
+}
+.popupKey.ant-select-dropdown .ant-select-item:hover{
+background: #F0F0F0;
+color: #333333;
+}
+.popupKey .ant-select-item-option-active:not(.ant-select-item-option-disabled){
+background: #F0F0F0;
+color: #333333;
+}
+
+.webVueSelectFormItem  {
+  flex-wrap: nowrap;
+}
+.webVueSelectFormItem ,
+.webVueSelectFormItem .ant-form-item-control-input,
+.webVueSelectFormItem .ant-form-item-control-input .ant-form-item-control-input-content,
+.webVueSelectFormItem .ant-form-item-control-input  .ant-select-selector .ant-select-selection-search input{
+  width: 100%;
+  height: 100%;
+}
+.webVueSelectFormItem .ant-form-item-control-input{
+  min-height: 30px !important;
+}
+.webVueSelectFormItem .ant-form-item-control {
+  min-width: 0;
+}
+.webVueSelectFormItem .ant-form-item-label {
+  flex-shrink: 0;
+  padding: 0;
+  text-align: left;
+}
+.webVueSelectFormItem  .ant-form-item-label label {
+  width: 100%;
+  height: 100%;
+}
+.webVueSelectFormItem .ant-form-item-explain {
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+}
+.webVueSelectFormItem .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+  margin-top: 4px;
+}
+.webVueSelectFormItem .ant-form-item-label label .label-content{
+  flex: 1;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.webVueSelectFormItem .ant-form-item-label>label.ant-form-item-no-colon:after {
+  display: none;
+}
+.webVueSelectFormItem .ant-form-item-label label .ant-form-item-content {
+  white-space: nowrap;
+}
+.webVueSelectFormItem.hide-label .ant-form-item-label {
+  display: none;
+}
+.webVueSelectFormItem .ant-form-item-content:focus{
+  outline: none;
+}
+.webVueSelect.ant-select-single .ant-select-selector .ant-select-selection-placeholder,
+.webVueSelect.ant-select-single .ant-select-selector{
+  display: flex;
+  align-items: center;
+}
+
+.webVueSelect {
+  width: 100%;
+  height:100%;
+}
+.webVueSelect .ant-select-selector {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: auto;
+}
+.webVueSelect.ant-select-single:not(.ant-select-customize-input) .ant-select-selector:after,
+.webVueSelect.ant-select-single .ant-select-selector .ant-select-selection-item,
+.webVueSelect.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  line-height: 1;
+}

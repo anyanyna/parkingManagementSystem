@@ -1,0 +1,6 @@
+[
+    {"type":"init","name":"Initialize event"},
+    {"type":"click","name":"Click Event"},
+    {"type":"change","name":"Value change event"},
+    {"type":"listenIn","name":"Monitoring events"}
+]

@@ -1,0 +1,50 @@
+<div>
+    <yt-row>
+        <yt-value comkey="customClassName" value="webVueAntYtInputPasswordStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-input comkey="name" value="passwordInput" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <!-- <yt-value comkey="value" isVariable="true" value="" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/> -->
+    </yt-row>
+    <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"300","h":"30","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    <yt-row title="opacity">
+        <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="aspect" :isOpen="true">
+        <yt-circular-bead comkey="radius" :value='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-fill comkey="fill" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"title":"fill","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#FFFFFF","fillStyle":{"title":"fill","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-line-segment comkey="border" :value='{"allow":true,"borderTop":"1px solid #D9D9D9","borderRight":"1px solid #D9D9D9","borderBottom":"1px solid #D9D9D9","borderLeft":"1px solid #D9D9D9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"border","type":"pure","color":"#D9D9D9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #D9D9D9","borderRight":"1px solid #D9D9D9","borderBottom":"1px solid #D9D9D9","borderLeft":"1px solid #D9D9D9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"border","type":"pure","color":"#D9D9D9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-shadow comkey="shadow" :value='{"allow":false,"boxShadow":"0px 0px 0px 0px #FFFFFF","shadowStyle":{"title":"shadow", "type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"0px 0px 0px 0px #FFFFFF","shadowStyle":{"title":"shadow", "type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="text" :isOpen="true">
+        <yt-text comkey="text" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"left","textDecoration":"none","textStyle":"normal","paddingTop": "2px","paddingRight": "10px","paddingBottom": "2px","paddingLeft": "16px"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"left","textDecoration":"none","textStyle":"normal","paddingTop": "2px","paddingRight": "10px","paddingBottom": "2px","paddingLeft": "16px"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="placeholder">
+        <yt-row title="content">
+            <yt-input comkey="placeholder" value="请输入" type="string" defaultValue="" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="text">
+            <yt-fill comkey="placeholderColor" :value='{"allow":true,"background":"#b2b2b2","fillStyle":{"title":"fill","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#FFFFFF","fillStyle":{"title":"fill","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="function" :isOpen="true">
+        <yt-row title="value">
+            <yt-input comkey="value" isVariable="true" value="" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="MD5 encryption" :span="19">
+            <yt-switch comkey="md5Value" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="maxlength">
+            <yt-input-number comkey="maxlength" :value="100" defaultValue="" type="number" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="clearable">
+            <yt-switch comkey="allowClear" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="visibilityToggle" :span="19">
+            <yt-switch comkey="visibilityToggle" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change"/>
+        </yt-row>
+        <yt-row title="disabled">
+            <yt-switch comkey="disabled" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change"/>
+        </yt-row>
+    </yt-group-item>
+</div>

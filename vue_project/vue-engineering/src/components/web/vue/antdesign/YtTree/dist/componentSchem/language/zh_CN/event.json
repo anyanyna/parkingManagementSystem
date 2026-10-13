@@ -1,0 +1,8 @@
+[
+    {"type":"select","name":"选中节点","category":"1", "select": true},
+    {"type":"init","name":"初始化","category":"2", "select": false},
+    {"type":"listenIn","name":"数据依赖","category":"2", "select": false,"oldType":"dependency"},
+    {"type":"check","name":"点击复选框","category":"3", "select": false},
+    {"type":"expand","name":"展开/收起节点","category":"3", "select": false},
+    {"type":"rightClick","name":"右键点击树节点","category":"3", "select": false}
+]

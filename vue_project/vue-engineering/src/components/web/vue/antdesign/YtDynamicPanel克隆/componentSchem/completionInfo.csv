@@ -1,0 +1,9 @@
+参数||说明||类型||默认值;
+name||"动态面板组件名称"||string||"";
+isShow||"控制是否显示动态面板组件"||boolean||true;
+isLock||"控制锁定动态面板组件位置"||bolean||false;
+componentStates||"动态面板组件状态数据"||array||[];
+positionSize||"动态面板组件位置及宽高"||object||{"x":"0","y":"0","z":"0","w":"0","h":"0"};
+opacity||"动态面板组件透明度"||number||1;
+_$$customeMutileKeys||"动态面板组件当前选中状态"||string||"1";
+selectKey||"动态面板组件透明度"||string||"1";

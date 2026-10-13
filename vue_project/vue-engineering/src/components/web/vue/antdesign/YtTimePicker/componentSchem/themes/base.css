@@ -1,0 +1,25 @@
+.webVueAntYtTimepicker {
+    color: var(--web-vue-ant-yttimepicker-color);
+}
+.webVueAntYtTimepicker .ant-time-picker-panel {
+    color: var(--web-vue-ant-yttimepicker-piker-color);
+}
+.webVueAntYtTimepicker .ant-time-picker-panel-inner {
+    background-color: var(--web-vue-ant-yttimepicker-piker-bg-color);
+    
+}
+.webVueAntYtTimepicker .ant-time-picker-panel-input-wrap {
+    border-color: var(--web-vue-ant-yttimepicker-piker-border-color);
+}
+.webVueAntYtTimepicker .ant-time-picker-panel-addon {
+    border-color: var(--web-vue-ant-yttimepicker-piker-border-color);
+}
+.webVueAntYtTimepicker .ant-time-picker-panel-select {
+    border-color: var(--web-vue-ant-yttimepicker-piker-border-color);
+}
+.webVueAntYtTimepicker li.ant-time-picker-panel-select-option-selected {
+    background-color: var(--web-vue-ant-yttimepicker-time-selected-bg-color);
+}
+.webVueAntYtTimePicker .ant-picker-suffix .anticon {
+    color: var(--web-vue-ant-yttimepicker-select-suffix-color);
+}

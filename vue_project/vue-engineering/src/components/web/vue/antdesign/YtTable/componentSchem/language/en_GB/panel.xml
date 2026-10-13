@@ -1,0 +1,84 @@
+<div>
+    <yt-row>
+        <yt-value comkey="customClassName" value="webVueAntYtTableStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-input comkey="name" value="table" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="currentRow"  isVariable="true" :value="{}" defaultValue="" type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="selectRows"  isVariable="true" :value="[]" defaultValue="" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="position and size">
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"600","h":"400","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="layer">
+        <yt-row title="opacity">
+            <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="border">
+        <yt-line-segment comkey="border" :hideCustom="true" :value='{"allow":true,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="radius">
+        <yt-circular-bead comkey="radius" :value='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="shadow">
+        <yt-shadow comkey="shadow" :value='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="horizontalBorder">
+        <yt-line-segment comkey="horizontalBorder" :hideCustom="true" :value='{"allow":true,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="verticalBorder">
+        <yt-line-segment comkey="verticalBorder" :hideCustom="true" :value='{"allow":true,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-row title="select">
+        <yt-select comkey="select" value="checkbox" defaultValue="hide" :options='[{"label":"隐藏","value":"hide"},{"label":"单选","value":"radio"},{"label":"多选","value":"checkbox"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="head">
+        <yt-row title="showHead">
+            <yt-switch comkey="showHead" :value="true" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="headBg">
+            <yt-fill comkey="headBg" :value='{"allow":false,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="headText">
+            <yt-text comkey="headText" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="headHeight">
+            <yt-input-number comkey="headHeight" value="50px" defaultValue="50px" unit="px" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="row">
+        <yt-row title="bodyBg">
+            <yt-fill comkey="bodyBg" :value='{"allow":false,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="bodyText">
+            <yt-text comkey="bodyText" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="bodyHeight">
+            <yt-input-number comkey="bodyHeight" value="50px" defaultValue="50px" unit="px" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="tableStriped">
+            <yt-fill comkey="tableStriped" :defaultTransparent="false" :showColorType="['pure', 'linear']" :value='{"allow":false,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+    </yt-group-item>
+    <!-- <yt-group-item title="pagination">
+        <yt-row title="showPage">
+            <yt-switch comkey="showPage" :value="true" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="pagePosition">
+            <yt-select comkey="pagePosition" value="flex-end" defaultValue="flex-end" :options='[{"label":"左对齐","value":"flex-start"},{"label":"居中对齐","value":"center"},{"label":"右对齐","value":"flex-end"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="pageText">
+            <yt-text comkey="pageText" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="pageSize">
+            <yt-input-number comkey="pageSize" :value="10" :defaultValue="10" type="number" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="currentPage">
+            <yt-input-number comkey="current" :value="1" :defaultValue="1" type="number" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item> -->
+    <yt-row title="data">
+        <yt-spreadsheet isVariable="true" comkey="data" :value='{"columns":[{"key": "id", "title": "id", "dataIndex": "id" }, {"key": "title", "title": "title", "dataIndex": "title" }, {"key": "name", "title": "name", "dataIndex": "name" }],"dataSource":[{"id": 1, "title": "标题1", "name": "标题1"},{"id": 2, "title": "标题2", "name": "标题2"}]}' :defaultValue="{}" type="object"  v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+</div>

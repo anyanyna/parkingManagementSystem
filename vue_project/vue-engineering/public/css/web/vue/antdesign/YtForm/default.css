@@ -1,0 +1,12 @@
+
+.webVueAntYtFormStyle{
+opacity: 1;
+}
+
+.webVueAntForm{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--web-vue-ant-form-bg-color);
+}
+

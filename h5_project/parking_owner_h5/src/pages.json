@@ -1,0 +1,179 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/pay",
+			"style": {
+				"navigationBarTitleText": "缴费",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/findRent/index",
+			"style": {
+				"navigationBarTitleText": "找长租",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/findRent/buy",
+			"style": {
+				"navigationBarTitleText": "长租购买",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/car/index",
+			"style": {
+				"navigationBarTitleText": "我的车辆",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/car/certification",
+			"style": {
+				"navigationBarTitleText": "车辆认证",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/longRent/index",
+			"style": {
+				"navigationBarTitleText": "长租信息记录",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/longRent/detail",
+			"style": {
+				"navigationBarTitleText": "长租详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/park/index",
+			"style": {
+				"navigationBarTitleText": "停车记录",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/park/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/park/chargeDetail",
+			"style": {
+				"navigationBarTitleText": "收费明细",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的账户",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/purse/index",
+			"style": {
+				"navigationBarTitleText": "我的钱包",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/purse/recharge",
+			"style": {
+				"navigationBarTitleText": "充值",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/identity",
+			"style": {
+				"navigationBarTitleText": "身份认证",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/phone",
+			"style": {
+				"navigationBarTitleText": "修改手机",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/password",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/suggest",
+			"style": {
+				"navigationBarTitleText": "反馈建议",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/invoice/index",
+			"style": {
+				"navigationBarTitleText": "我的发票",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/invoice/apply",
+			"style": {
+				"navigationBarTitleText": "申请开票",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/invoice/list",
+			"style": {
+				"navigationBarTitleText": "发票信息",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/invoice/add",
+			"style": {
+				"navigationBarTitleText": "开票信息",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#1D84FA",
+		"backgroundColor": "#FFFFFF",
+		"navigationStyle": "custom"
+	}
+}

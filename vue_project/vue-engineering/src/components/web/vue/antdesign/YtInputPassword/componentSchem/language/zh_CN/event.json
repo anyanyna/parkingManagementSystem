@@ -1,0 +1,8 @@
+[
+    {"type":"change","name":"输入值改变", "category": 1, "select": true},
+    {"type":"pressEnter","name":"按下回车", "category": 1},
+    {"type":"init","name":"初始化", "category": 2},
+    {"type":"listenIn","name":"数据依赖", "category": 2,"oldType":"dependency"},
+    {"type":"focus","name":"获取焦点", "category": 3},
+    {"type":"blur","name":"失去焦点", "category": 3}
+]

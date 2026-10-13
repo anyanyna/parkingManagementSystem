@@ -1,0 +1,7 @@
+[
+    {"type":"change","name":"选中日期改变", "category": 1, "select": true},
+    {"type":"panelChange","name":"日历面板改变", "category": 1},
+    {"type":"init","name":"初始化", "category": 2},
+    {"type":"listenIn","name":"数据依赖", "category": 2,"oldType":"dependency"},
+    {"type":"openChange","name":"打开/关闭日历面板", "category": 3}
+]

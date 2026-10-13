@@ -1,0 +1,31 @@
+<div>
+    <yt-row>
+        <yt-input comkey="name" value="日期选择" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="value" isVariable="true" value="" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="位置与尺寸">
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="图层">
+        <yt-row title="不透明度">
+            <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="文本">
+        <yt-text comkey="text" :value='{"fontStyle":{"type":"pure","color":" ","image":" ","repeat":"no-repeat","align":"center"},"fontFamily":"MICROSOFT YAHEI","fontSize":"14px", "fontWeight":"bolder","lineHeight":"32px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":" "}' :defaultValue='{"fontStyle":{"type":"pure","color":" ","image":" ","repeat":"no-repeat","align":"center"},"fontFamily":"","fontSize":"","fontWeight":"","lineHeight":"","letterSpacing":"0px","textAlign":"center","verticalAlign":"","textDecoration":" "}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="填充">
+        <yt-fill comkey="fill" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":" ","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"","fillStyle":{"type":"pure","color":"","image":" ","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="边框">
+        <yt-line-segment comkey="border" :value='{"allow":true,"borderTop":"1px solid #d9d9d9fff","borderRight":" ","borderBottom":" ","borderLeft":" ","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9fff","image":" ","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":" ","borderRight":" ","borderBottom":" ","borderLeft":" ","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":" ","image":" ","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="圆角">
+        <yt-circular-bead comkey="radius" :value='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"","borderTopRightRadius":"","borderBottomLeftRadius":"","borderBottomRightRadius":"","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="阴影">
+        <yt-shadow comkey="shadow" :value='{"allow":false,"boxShadow":"1px 1px 1px 1px rgba(255, 255, 255, 1)","shadowStyle":{"type":"pure","color":"#ffffff","image":" ","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"","shadowStyle":{"type":"pure","color":"","image":" ","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+</div>

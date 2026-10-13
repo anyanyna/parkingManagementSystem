@@ -1,0 +1,26 @@
+:root{
+}
+.webVueAntYtPicture {
+}
+:root{
+    --web-vue-ant-ytspan-color:rgba(0, 0, 0, 0.88);
+}
+.webVueAntYtSpan {
+    color: var(--web-vue-ant-ytspan-color);
+}
+:root{
+    --web-vue-antdesign-input-font-size: 14px;
+}
+.webVueAntinput {
+    font-size: var(--web-vue-antdesign-input-font-size);
+}
+:root{
+    --web-vue-antdesign-button-font-size: 14px;
+}
+.webVueAntButton {
+    font-size: var(--web-vue-antdesign-button-font-size);
+}
+:root{
+}
+.webVueAntYtIcon {
+}

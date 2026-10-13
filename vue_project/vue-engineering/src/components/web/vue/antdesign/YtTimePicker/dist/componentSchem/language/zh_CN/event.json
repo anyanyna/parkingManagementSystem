@@ -1,0 +1,6 @@
+[
+    {"type":"change","name":"选中时间改变", "category": 1, "select": true},
+    {"type":"init","name":"初始化", "category": 2},
+    {"type":"listenIn","name":"数据依赖", "category": 2,"oldType":"dependency"},
+    {"type":"openChange","name":"打开/关闭时间面板", "category": 3}
+]

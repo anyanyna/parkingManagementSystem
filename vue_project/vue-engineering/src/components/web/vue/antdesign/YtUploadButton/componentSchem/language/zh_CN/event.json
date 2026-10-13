@@ -1,0 +1,8 @@
+[
+    {"type":"change","name":"上传文件改变","category":"1","select": true,"oldType":"changeList"},
+    {"type":"init","name":"初始化","category":"2"},
+    {"type":"listenIn","name":"数据依赖","category":"2","oldType":"dependency"},
+    {"type":"toPreview","name":"预览文件","category":"3"},
+    {"type":"toDowload","name":"下载文件","category":"3"},
+    {"type":"remove","name":"删除文件","category":"3"}
+]

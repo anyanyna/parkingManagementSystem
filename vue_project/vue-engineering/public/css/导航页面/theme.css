@@ -1,0 +1,72 @@
+:root {
+    --web-vue-ant-ytcontentshow-none-bg-color: #81d3f840;
+}
+.none-select-page {
+    background-color: var(--web-vue-ant-ytcontentshow-none-bg-color);
+}
+
+:root{
+}
+.webVueAntYtRectangle {
+}
+:root{
+    --web-vue-ant-ytspan-color:rgba(0, 0, 0, 0.88);
+}
+.webVueAntYtSpan {
+    color: var(--web-vue-ant-ytspan-color);
+}
+:root{
+    --web-vue-ant-YtVerticleMenu-color:#000000d9;
+    --web-vue-ant-YtVerticleMenu-selected-color:#1890ff;
+    --web-vue-ant-YtVerticleMenu-hover-color:#1890ff;
+    --web-vue-ant-YtVerticleMenu-disabled-color:#00000040;
+    --web-vue-ant-YtVerticleMenu-active-color:#1890ff;
+    --web-vue-ant-YtVerticleMenu-selected-bg-color:#e6f7ff;
+    --web-vue-ant-YtVerticleMenu-active-bg-color:#e6f7ff;
+}
+
+.webVueAntYtVerticleMenu {
+    color: var(--web-vue-ant-YtVerticleMenu-color);
+}
+
+.webVueAntYtVerticleMenu .ant-menu-item-disabled,
+.webVueAntYtVerticleMenu .ant-menu-submenu-disabled {
+    color: var(--web-vue-ant-YtVerticleMenu-disabled-color)!important;
+}
+.webVueAntYtVerticleMenu.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: var(--web-vue-ant-YtVerticleMenu-selected-bg-color);
+}
+.webVueAntYtVerticleMenu.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: var(--web-vue-ant-YtVerticleMenu-selected-bg-color);
+}
+.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-item:hover,
+.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-item-active:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected),
+.webVueAntYtVerticleMenu.ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-submenu-active:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected),
+.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-submenu-title:hover {
+    color: var(--web-vue-ant-YtVerticleMenu-hover-color);
+
+}
+.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-item-active.ant-menu-submenu-selected,
+.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-submenu-active.ant-menu-submenu-selected,
+.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-item-active.ant-menu-item-selected,
+.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-submenu-active.ant-menu-item-selected{
+    color: var(--web-vue-ant-YtVerticleMenu-selected-color);
+
+}
+.webVueAntYtVerticleMenu .ant-menu-item:active,
+.webVueAntYtVerticleMenu .ant-menu-submenu-title:active {
+    color: var(--web-vue-ant-YtVerticleMenu-active-color);
+    background: var(--web-vue-ant-YtVerticleMenu-active-bg-color);
+}
+
+:root{
+}
+.webVueAntYtIcon {
+}
+:root{
+    --web-vue-antdesign-button-font-size: 14px;
+}
+.webVueAntButton {
+    font-size: var(--web-vue-antdesign-button-font-size);
+}

@@ -1,0 +1,47 @@
+
+.__customClassName__.ant-tree {
+    opacity: '__opacity__';
+    color: '__text.fontStyle.color__';
+    font-family: '__text.fontFamily__';
+    font-size: '__text.fontSize__';
+    font-weight: '__text.fontWeight__';
+    letter-spacing: '__text.letterSpacing__';
+}
+.__customClassName__ .ant-tree-node-selected {
+    background-color: '__selectedBackgroundColor.color__ !important';
+    color: '__selectedTextColor.color__';
+}
+.__customClassName__ .ant-tree-node-content-wrapper:hover {
+    background-color: '__hoverBackgroundColor.color__ !important';
+    color: '__hoverTextColor.color__';
+}
+.__customClassName__  .ant-tree-node-content-wrapper {
+    padding-left: '__push__px';
+}
+
+#static_start
+.webVueAntYtTree {
+    width: 100%;
+    height: 100%;
+}
+.webVueAntYtTree .ant-tree-treenode {
+    width: 100%;
+}
+.webVueAntYtTree.ant-tree-show-line .ant-tree-switcher {
+    background-color: transparent;
+}
+.nowrapEllipsis .ant-tree-node-content-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ant-tree-switcher-icon.rotate {
+    transform: rotate(90deg);
+}
+.webVueAntYtTree .ant-tree-switcher{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#static_end

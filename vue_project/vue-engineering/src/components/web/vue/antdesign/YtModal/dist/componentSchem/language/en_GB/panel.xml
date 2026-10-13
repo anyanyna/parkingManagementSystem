@@ -1,0 +1,43 @@
+<div>
+    <yt-row>
+        <yt-value comkey="customClassName" value="webVueAntYtModalStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-input comkey="name" value="弹窗" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="visible" :value="true" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="位置与尺寸">
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"520","h":"222","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="图层">
+        <yt-row title="不透明度">
+            <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <!-- <yt-group-item title="文本">
+        <yt-text comkey="text" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="填充">
+        <yt-fill comkey="fill" :value='{"allow":false,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item> -->
+    <yt-group-item title="边框">
+        <yt-line-segment comkey="border" :value='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="圆角">
+        <yt-circular-bead comkey="radius" :value='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="阴影">
+        <yt-shadow comkey="shadow" :value='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="蒙版">
+        <yt-row title="显示">
+            <yt-switch comkey="mask" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="填充">
+            <yt-fill comkey="maskStyleBg" :value='{"allow":true,"background":"rgba(0, 0, 0, 0.45)","fillStyle":{"type":"pure","color":"rgba(0, 0, 0, 0.45)","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"rgba(0, 0, 0, 0.45)","fillStyle":{"type":"pure","color":"rgba(0, 0, 0, 0.45)","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+    </yt-group-item>
+    <!-- <yt-row title="内容">s
+        <yt-input comkey="content" isVariable="true" value="文本" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row> -->
+</div>

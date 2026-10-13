@@ -1,0 +1,7 @@
+[
+    {"type":"ok","name":"点击确定", "category": 1, "select": true},
+    {"type":"cancel","name":"点击取消", "category": 1},
+    {"type":"show","name":"显示", "category": 2},
+    {"type":"close","name":"关闭", "category": 2},
+    {"type":"init","name":"初始化", "category": 3}
+]

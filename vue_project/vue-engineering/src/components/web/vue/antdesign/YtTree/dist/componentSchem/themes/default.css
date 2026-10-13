@@ -1,0 +1,9 @@
+:root{
+    --web-vue-ant-yttree-bg-color:#333;
+    --web-vue-ant-yttree-title-hover-bg-color:rgba(0, 0, 0, 0.04);
+    --web-vue-ant-yttree-title-selected-bg-color:#e6f4ff;
+    --web-vue-ant-yttree-color:rgba(0, 0, 0, 0.88);
+    --web-vue-ant-yttree-title-hover-color:inherit;
+    --web-vue-ant-yttree-title-selected-color:inherit;
+    --web-vue-ant-yttree-title-disabled-color:#00000040;
+}

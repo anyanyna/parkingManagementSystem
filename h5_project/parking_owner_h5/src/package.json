@@ -1,0 +1,19 @@
+{
+    "id": "BuTing-Tree",
+    "name": "BuTingTree  -   CSS无限递归树状图 CSS 组织结构图 族谱，",
+    "displayName": "BuTingTree  -   CSS无限递归树状图 CSS 组织结构图 族谱，",
+    "version": "1.0.0",
+    "description": "用scss写的树状图，无限递归，",
+    "keywords": [
+        "树状图",
+        "结构图",
+        "组织结构图",
+        "族谱"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

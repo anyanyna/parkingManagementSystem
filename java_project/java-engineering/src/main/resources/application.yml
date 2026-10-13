@@ -1,0 +1,84 @@
+server:
+  port: 9071
+  servlet.session.cookie.name: AIPROJECTSESSIONID
+  servlet.session.timeout: 1800
+  tomcat:
+    max-connections: 10000  # 可处理的最大连接数
+    accept-count: 1000  # 传入连接请求的最大队列长度
+    threads:
+      max: 512  # 池中最大线程数
+      min-spare: 16  # 最小空闲线程数
+spring:
+  application.name: parkingManagement
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  session.store-type: none
+  main.allow-bean-definition-overriding: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 通过环境变量注入，避免将真实地址与账号提交到仓库
+    # 本地开发可直接修改默认值，或在启动时指定 DB_URL / DB_USERNAME / DB_PASSWORD
+    url: ${DB_URL:jdbc:mysql://127.0.0.1:3306/parking_management?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+    druid:
+      initialSize: 10
+      minIdle: 8
+      maxActive: 100
+      validationQuery: SELECT 1 from dual
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      maxWait: 30000
+      filters: stat,slf4j
+      keepAlive: true
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 300000
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: ${DRUID_STAT_USERNAME:admin}
+        login-password: ${DRUID_STAT_PASSWORD:admin}
+  redis:
+    host: ${REDIS_HOST:127.0.0.1} # Redis 地址
+    port: ${REDIS_PORT:6379} # 端口
+    database: 0 # 数据库索引
+    password: ${REDIS_PASSWORD:} # 密码（无密码留空）
+upload:
+  dir: ${UPLOAD_DIR:./upload/} # 上传文件目录
+security:
+  url:
+    index: /#/daohangye
+    login: /#/dengluye
+    permit: /**/login/**,/**/*.js,/**/*.css,/**/static/**, /, /system/logincheck,/WSTest/**,/CameraEquipment/**,/PaymentNotify/**,/AppBase/**,/ScanYardCode/**, /*/**
+minio:
+  host: ${MINIO_HOST:127.0.0.1}
+  port: ${MINIO_PORT:9000}
+  ak: ${MINIO_ACCESS_KEY:} # MinIO AccessKey，必填
+  sk: ${MINIO_SECRET_KEY:} # MinIO SecretKey，必填
+  echoUrl: ${MINIO_ECHO_URL:} # 车牌图片预览地址前缀
+# ---------------- 支付配置（使用支付功能前必须自行配置） ----------------
+# payment:
+#   env:
+#     test: true                         # 是否支付测试环境
+#   member:
+#     id: ""                             # 招行商户号 payment.member.id
+#   cashier: ""                          # 虚拟收银员 payment.cashier
+#   notify:
+#     url: ""                            # 支付回调地址 payment.notify.url，如 http://你的域名:9071/PaymentNotify/aggregateNotify
+# wexin:
+#   appid: ""                            # 微信公众号 appid
+#   secret: ""                           # 微信公众号 secret
+# app:
+#   id: ""                               # 支付平台 app id
+#   secret: ""                           # 支付平台 app secret
+# 商户私钥等敏感凭证通过环境变量注入：CMB_PRIVATE_KEY / CMB_PUBLIC_KEY / CMB_BANK_PUBLIC_KEY
+# 萤石开放平台凭证通过环境变量注入：EZVIZ_ACCESS_TOKEN / EZVIZ_APP_KEY / EZVIZ_APP_SECRET

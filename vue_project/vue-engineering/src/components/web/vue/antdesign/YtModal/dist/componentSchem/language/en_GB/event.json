@@ -1,0 +1,7 @@
+[
+    {"type":"ok","name":"Click ok button event", "category": 1, "select": true},
+    {"type":"cancel","name":"Click cancel button event", "category": 1},
+    {"type":"show","name":"Show modal", "category": 2},
+    {"type":"close","name":"Close modal", "category": 2},
+    {"type":"init","name":"Initialize event", "category": 3}
+]

@@ -1,0 +1,108 @@
+<div>
+    <yt-row>
+        <yt-value comkey="customClassName" value="webVueAntYtModalStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-input comkey="name" value="弹窗" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" isVariable="true" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <!-- <yt-value comkey="visible" isVariable="true" :value="true" defaultValue="" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/> -->
+        <yt-value comkey="editShow" :value="true" defaultValue="" type="boolean" v-on:changeData="change" v-on:setValue="setValue"></yt-value>
+        <yt-value comkey="states" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"></yt-value>
+        <yt-value comkey="computedName" value="modalState" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="form" isForm="true" isVariable="true" :value="{}" :defaultValue="{}" type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="_$$customeFormKey" value="form" type="string"/>
+    </yt-row>
+    <yt-row>
+        <yt-status :statuses='[]' isVariable="true" comkey="stateKey" value="2" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue" v-on:changeStatus="changeStatus"></yt-status>
+    </yt-row>
+    <yt-row>
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"380","h":"250","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row title="不透明度">
+        <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="外观" :isOpen="true">
+        <yt-circular-bead comkey="radius" :value='{"borderTopLeftRadius":"6px","borderTopRightRadius":"6px","borderBottomLeftRadius":"6px","borderBottomRightRadius":"6px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"6px","borderTopRightRadius":"6px","borderBottomLeftRadius":"6px","borderBottomRightRadius":"6px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-line-segment comkey="border" :value='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-shadow comkey="shadow" :value='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="页头" :isOpen="true">
+        <yt-row title="显示">
+            <yt-switch comkey="showHeader" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="高度">
+            <yt-input-number comkey="headerHeight" value="45px" defaultValue="45px" type="string" unit="px" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="填充" float="left">
+            <yt-fill :hideTitleShowType="true" comkey="headerBg" :showAllow="false" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="关闭按钮">
+            <yt-switch comkey="closable" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="标题内容">
+            <yt-input comkey="title" value="标题" defaultValue="标题" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="标题文本">
+            <yt-text comkey="headerText" :value='{"fontStyle":{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","textAlign":"left","textDecoration":"none","textStyle":"normal" ,"paddingTop": "12px","paddingRight": "0px","paddingBottom": "12px","paddingLeft": "21px"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","textAlign":"left","textDecoration":"none","textStyle":"normal" ,"paddingTop": "12px","paddingRight": "0px","paddingBottom": "12px","paddingLeft": "21px"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="页脚" :isOpen="true">
+        <yt-row title="显示">
+            <yt-switch comkey="showFooter" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="高度">
+            <yt-input-number comkey="footerHeight" value="57px" defaultValue="57px" type="string" unit="px" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="填充" float="left">
+            <yt-fill :hideTitleShowType="true" comkey="footerBg" :showAllow="false" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="取消按钮">
+            <yt-switch comkey="showCancelButton" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="内容">
+            <yt-input comkey="cancelText" value="取消" defaultValue="取消" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="按钮颜色" float="left">
+           <yt-color-picker comkey="cancelButtonBg" :value='{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="文本颜色" float="left">
+           <yt-color-picker comkey="cancelButtonColor" :value='{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="确定按钮">
+            <yt-switch comkey="showOkButton" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="内容">
+            <yt-input comkey="okText" value="确定" defaultValue="确定" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="按钮颜色" float="left">
+           <yt-color-picker comkey="okButtonBg" :value='{"type":"pure","color":"#3C8EFF","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#3C8EFF","image":"none","repeat":"no-repeat","align":"center"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="文本颜色" float="left">
+           <yt-color-picker comkey="okButtonColor" :value='{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="遮罩">
+        <yt-row title="显示">
+            <yt-switch comkey="mask" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="填充">
+            <yt-fill :hideTitleShowType="true" comkey="maskStyleBg" :showAllow="false" :value='{"allow":true,"background":"rgba(114,114,114,0.4)","fillStyle":{"type":"pure","color":"rgba(114,114,114,0.4)","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"rgba(114,114,114,0.4)","fillStyle":{"type":"pure","color":"rgba(114,114,114,0.4)","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="功能" :isOpen="true">
+        <!-- <yt-row title="拖动">
+            <yt-switch comkey="draggable" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row> -->
+        <yt-row title="点击遮罩关闭" :span="19">
+            <yt-switch comkey="maskClosable" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="关闭清空">
+            <yt-switch comkey="destroyOnClose" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="校验">
+            <yt-switch comkey="needRule" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="校验方式">
+            <yt-radio-button comkey="triggerMode" value="change" defaultValue="change" :options='[{"value":"blur","label":"失焦校验"},{"value":"change","label":"实时校验"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+</div>

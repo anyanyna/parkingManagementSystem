@@ -1,0 +1,6 @@
+[
+    {"type":"init","name":"Initialize event","category": 1, "select": true},
+    {"type":"listenIn","name":"Value dependent event", "category": 1,"oldType":"dependency"},
+    {"type":"click_to_jump","name":"Selected change event","category": 2,"oldType":"select"},
+    {"type":"openChange","name":"Open/Close change event","category": 2}
+]

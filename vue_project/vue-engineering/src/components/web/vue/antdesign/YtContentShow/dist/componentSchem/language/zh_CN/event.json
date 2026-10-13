@@ -1,0 +1,6 @@
+[
+    {"type":"init","name":"初始化事件"},
+    {"type":"click","name":"点击事件"},
+    {"type":"change","name":"值改变事件"},
+    {"type":"listenIn","name":"监听事件"}
+]

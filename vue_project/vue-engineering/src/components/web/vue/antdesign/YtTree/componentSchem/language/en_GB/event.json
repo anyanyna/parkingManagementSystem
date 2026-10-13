@@ -1,0 +1,8 @@
+[
+    {"type":"select","name":"select","category":"1", "select": true},
+    {"type":"init","name":"init","category":"2", "select": false},
+    {"type":"listenIn","name":"Value dependent event","category":"2", "select": false,"oldType":"dependency"},
+    {"type":"check","name":"check","category":"3", "select": false},
+    {"type":"expand","name":"expand","category":"3", "select": false},
+    {"type":"rightClick","name":"rightClick","category":"3", "select": false}
+]

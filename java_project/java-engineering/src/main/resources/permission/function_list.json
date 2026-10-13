@@ -1,0 +1,2372 @@
+{"1869338166138241024": [
+  {
+    "functionName": "点击放大图片",
+    "code": "6hDifn, AFeKZD",
+    "function": [
+      {
+        "ref": "ref26",
+        "url": [],
+        "is_show_variable": ""
+      },
+      {
+        "ref": "ref25",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "进入页面后加载停车场名称",
+    "code": "GILTqP, g5BBIb",
+    "function": [
+      {
+        "ref": "ref27",
+        "url": [
+          "/WebInspectionofcaryard/getParkingLotNames",
+          "/WebInspectionofcaryard/getParkingLotNames_xEw"
+        ],
+        "is_show_variable": ""
+      },
+      {
+        "ref": "ref36",
+        "url": [
+          "/WebInspectionofcaryard/getParkingLotNames",
+          "/WebInspectionofcaryard/getParkingLotNames_xEw"
+        ],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "进入页面后加载用户昵称",
+    "code": "B7Vg0A",
+    "function": [
+      {
+        "ref": "ref38",
+        "url": [
+          "/WebInspectionofcaryard/getUserNickNames"
+        ],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "清空搜索区域并初始化表格",
+    "code": "HxJvWy",
+    "function": [
+      {
+        "ref": "ref5",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "显示巡检上报",
+    "code": "WPTdJq",
+    "function": [
+      {
+        "ref": "ref21",
+        "url": [
+          "/WebInspectionofcaryard/showInspectionReportRef21"
+        ],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "显示处理结果",
+    "code": "e2TOOh",
+    "function": [
+      {
+        "ref": "ref31",
+        "url": [
+          "/WebInspectionofcaryard/showProcessingResultRef31"
+        ],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "根据搜索区域查询表格数据",
+    "code": "rUsXZx",
+    "function": [
+      {
+        "ref": "ref6",
+        "url": [
+          "/WebInspectionofcaryard/generalQueryInspectionTableData"
+        ],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "显示新增弹窗并生成时间戳",
+    "code": "hTmKH4",
+    "function": [
+      {
+        "ref": "ref15",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "监听异常类型并更新状态",
+    "code": "mzESMx, f59kcL",
+    "function": [
+      {
+        "ref": "ref62",
+        "url": [
+          "/WebInspectionofcaryard/listenToExceptionTypeRef62",
+          "/WebInspectionofcaryard/listenToExceptionTypeRef63"
+        ],
+        "is_show_variable": ""
+      },
+      {
+        "ref": "ref63",
+        "url": [
+          "/WebInspectionofcaryard/listenToExceptionTypeRef62",
+          "/WebInspectionofcaryard/listenToExceptionTypeRef63"
+        ],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "根据分页信息显示数据",
+    "code": "YVk8FQ",
+    "function": [
+      {
+        "ref": "ref18",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "进入页面后加载表格数据",
+    "code": "It5Sxg",
+    "function": [
+      {
+        "ref": "ref18",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "删除当前行数据并重新加载表格",
+    "code": "ote8Ei",
+    "function": [
+      {
+        "ref": "ref30",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "删除选中行数据并重新加载表格",
+    "code": "Sqvka3",
+    "function": [
+      {
+        "ref": "ref24",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "导出表格数据为.xlsx",
+    "code": "LSyYwW",
+    "function": [
+      {
+        "ref": "ref23",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "关闭新增弹窗",
+    "code": "0zcu03",
+    "function": [
+      {
+        "ref": "ref33",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "将新增弹窗数据添加到表格",
+    "code": "1x7znF",
+    "function": [
+      {
+        "ref": "ref33",
+        "url": [
+          "/WebInspectionofcaryard/addNewEntryToTable"
+        ],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "关闭巡检上报",
+    "code": "zxj8x7",
+    "function": [
+      {
+        "ref": "ref42",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "更新表格行数据根据巡检上报",
+    "code": "fLlAxx",
+    "function": [
+      {
+        "ref": "ref42",
+        "url": [
+          "/WebInspectionofcaryard/updateTableRowWithInspectionReport"
+        ],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "关闭处理结果",
+    "code": "SpHFwH",
+    "function": [
+      {
+        "ref": "ref52",
+        "url": [],
+        "is_show_variable": ""
+      }
+    ]
+  },
+  {
+    "functionName": "更新表格行数据根据处理结果",
+    "code": "8WkjNb",
+    "function": [
+      {
+        "ref": "ref52",
+        "url": [
+          "/WebInspectionofcaryard/updateTableRowWithProcessingResult"
+        ],
+        "is_show_variable": ""
+      }
+    ]
+  }
+],
+  "1867445615403728896": [
+    {
+      "functionName": "查询表格数据",
+      "code": "Dxa0rR",
+      "function": [
+        {
+          "ref": "ref6",
+          "url": [
+            "/WebOnlineinvoicing/generalFetchTableData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "清空搜索区域并初始化表格",
+      "code": "FFkUEB",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/WebOnlineinvoicing/generalFetchTableData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "分页显示数据",
+      "code": "YVk8FQ",
+      "function": [
+        {
+          "ref": "ref18",
+          "url": [
+            "/WebOnlineinvoicing/generalFetchTableData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示表格数据",
+      "code": "dHZZzs",
+      "function": [
+        {
+          "ref": "ref18",
+          "url": [
+            "/WebOnlineinvoicing/generalFetchTableData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "替换发票附件文件地址",
+      "code": "7tZB64",
+      "function": [
+        {
+          "ref": "ref25",
+          "url": [
+            "/WebOnlineinvoicing/handleInvoiceUploadChange"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "更新开票状态和附件地址",
+      "code": "6B744L",
+      "function": [
+        {
+          "ref": "ref24",
+          "url": [
+            "/WebOnlineinvoicing/handleInvoiceUpdateChange"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "导出表格数据",
+      "code": "hjehJY",
+      "function": [
+        {
+          "ref": "ref15",
+          "url": [
+            "/WebOnlineinvoicing/exportTableData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1869272361639870464": [
+    {
+      "functionName": "动态面板状态切换",
+      "code": "8BNPSX",
+      "function": [
+        {
+          "ref": "ref17",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "收入流水查询",
+      "code": "8eo1k3",
+      "function": [
+        {
+          "ref": "ref82",
+          "url": [
+            "/WebFundmanagement/generalQueryIncomeFlowList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "清空并初始化收入流水数据",
+      "code": "VP25ff",
+      "function": [
+        {
+          "ref": "ref81",
+          "url": [
+            "/WebFundmanagement/initializeIncomeFlowData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "交易查询",
+      "code": "Xum3gn",
+      "function": [
+        {
+          "ref": "ref92",
+          "url": [
+            "/WebFundmanagement/generalQueryTransactionListData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "清空并初始化交易查询数据",
+      "code": "nzZ33K",
+      "function": [
+        {
+          "ref": "ref91",
+          "url": [
+            "/WebFundmanagement/initializeTransactionQueryData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "支付日志查询",
+      "code": "irCk8e",
+      "function": [
+        {
+          "ref": "ref117",
+          "url": [
+            "/WebFundmanagement/generalQueryPaymentLogList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "清空并初始化支付日志数据",
+      "code": "LXlyVb",
+      "function": [
+        {
+          "ref": "ref116",
+          "url": [
+            "/WebFundmanagement/initializePaymentLogData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "导出支付日志数据",
+      "code": "N30VRe",
+      "function": [
+        {
+          "ref": "ref123",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "导出交易查询数据",
+      "code": "rgRWvl",
+      "function": [
+        {
+          "ref": "ref98",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "导出收入流水数据",
+      "code": "Is8KHg",
+      "function": [
+        {
+          "ref": "ref87",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845285002984554496": [
+    {
+      "functionName": "用户登录",
+      "code": "2SHlCZ",
+      "function": [
+        {
+          "ref": "ref8",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845285077223735296": [
+    {
+      "functionName": "菜单栏跳转功能",
+      "code": "8srjF2",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/Navigationpage/getUserMenuPermissions"
+          ],
+          "is_show_variable": "MenuBarisShow1"
+        }
+      ]
+    },
+    {
+      "functionName": "菜单权限显示功能",
+      "code": "gN0eCd",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/Navigationpage/getUserMenuPermissions"
+          ],
+          "is_show_variable": "MenuBarisShow1"
+        }
+      ]
+    }
+  ],
+  "1845285301862268928": [
+    {
+      "functionName": "导出停车场用户数据",
+      "code": "hiD2Jm",
+      "function": [
+        {
+          "ref": "ref15",
+          "url": [
+            "/Appusermanagement/getParkingUsersE6W"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "停用停车场用户",
+      "code": "5SPrje, TrKGMi",
+      "function": [
+        {
+          "ref": "ref16",
+          "url": [
+            "/Appusermanagement/deactivateParkingUser"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref38",
+          "url": [
+            "/Appusermanagement/deactivateParkingUser"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "查询停车场用户",
+      "code": "YSW0Zf, j4LRkf",
+      "function": [
+        {
+          "ref": "ref10",
+          "url": [
+            "/Appusermanagement/getParkingUsersJK1"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref12",
+          "url": [
+            "/Appusermanagement/getParkingUsersJK1"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示订单明细",
+      "code": "mhlDL7",
+      "function": [
+        {
+          "ref": "ref618",
+          "url": [
+            "/Appusermanagement/getParkingOrderDetails"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "默认显示所有停车场用户数据",
+      "code": "JkmaDv, i6kUrc",
+      "function": [
+        {
+          "ref": "ref20",
+          "url": [
+            "/Appusermanagement/getParkingUsersE6W"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref20",
+          "url": [
+            "/Appusermanagement/getParkingUsersE6W"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "启用停车场用户",
+      "code": "YYsdnl, aDqrfc",
+      "function": [
+        {
+          "ref": "ref26",
+          "url": [
+            "/Appusermanagement/enableParkingUser",
+            "/Appusermanagement/enableParkingUsers"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref37",
+          "url": [
+            "/Appusermanagement/enableParkingUser",
+            "/Appusermanagement/enableParkingUsers"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845285476613750784": [
+    {
+      "functionName": "导出停车订单",
+      "code": "QCcR5r",
+      "function": [
+        {
+          "ref": "ref30",
+          "url": [
+            "/Parkingorders/queryParkingOrders"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "结算订单",
+      "code": "HsRCmp",
+      "function": [
+        {
+          "ref": "ref156",
+          "url": [
+            "/Parkingorders/updateOrderPaymentStatus"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "完成订单支付",
+      "code": "oZMlOk",
+      "function": [
+        {
+          "ref": "ref143",
+          "url": [
+            "/Parkingorders/updateOrderPaymentStatus"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭订单",
+      "code": "qlwiPW",
+      "function": [
+        {
+          "ref": "ref144",
+          "url": [
+            "/Parkingorders/updateOrderPaymentStatus"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "查询停车订单",
+      "code": "jim5eN",
+      "function": [
+        {
+          "ref": "ref6",
+          "url": [
+            "/Parkingorders/queryParkingOrders"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "重置查询条件",
+      "code": "1m65bg",
+      "function": [
+        {
+          "ref": "ref7",
+          "url": [
+            "/Parkingorders/queryParkingOrders"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "订单退款",
+      "code": "oJ8CRf",
+      "function": [
+        {
+          "ref": "ref145",
+          "url": [
+            "/Parkingorders/updateRefundAmount"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "切换停车订单动态面板",
+      "code": "2dimbG",
+      "function": [
+        {
+          "ref": "ref32",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示订单支付记录",
+      "code": "HKotor, cY8IcF",
+      "function": [
+        {
+          "ref": "ref83",
+          "url": [
+            "/Parkingorders/getOrderPaymentRecords"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref83",
+          "url": [
+            "/Parkingorders/getOrderPaymentRecords"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示计费明细表",
+      "code": "7OSGcp, XAp4Yw",
+      "function": [
+        {
+          "ref": "ref133",
+          "url": [
+            "/Parkingorders/getBillingDetails"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref133",
+          "url": [
+            "/Parkingorders/getBillingDetails"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示订单操作记录",
+      "code": "xtFMKB, WjLyP1",
+      "function": [
+        {
+          "ref": "ref140",
+          "url": [
+            "/Parkingorders/getOrderOperationRecords"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref140",
+          "url": [
+            "/Parkingorders/getOrderOperationRecords"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示停车订单表",
+      "code": "klJfBD, 8u8swH",
+      "function": [
+        {
+          "ref": "ref142",
+          "url": [
+            "/Parkingorders/queryParkingOrders"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref142",
+          "url": [
+            "/Parkingorders/queryParkingOrders"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "打开订单详情弹窗",
+      "code": "OmwQC2",
+      "function": [
+        {
+          "ref": "ref142",
+          "url": [
+            "/Parkingorders/getOrderDetails"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭订单详情弹窗并更新退款状态",
+      "code": "9DA1oM, TIo2U5",
+      "function": [
+        {
+          "ref": "ref231",
+          "url": [
+            "/Parkingorders/updateOrderPaymentStatus",
+            "/Parkingorders/updateRefundAmount"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref231",
+          "url": [
+            "/Parkingorders/updateOrderPaymentStatus",
+            "/Parkingorders/updateRefundAmount"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845285535539527680": [
+    {
+      "functionName": "停用车场",
+      "code": "MdYh09, 3aRUiI, JE48QJ",
+      "function": [
+        {
+          "ref": "ref32",
+          "url": [
+            "/Depotconfiguration/updateSelectedYardsStatus"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref15",
+          "url": [
+            "/Depotconfiguration/updateSelectedYardsStatus"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref5798",
+          "url": [
+            "/Depotconfiguration/updateSelectedYardsStatus"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "重置车场查询条件",
+      "code": "nSVA57",
+      "function": [
+        {
+          "ref": "ref12",
+          "url": [
+            "/Depotconfiguration/getYardList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "查询车场列表",
+      "code": "ROh8AU",
+      "function": [
+        {
+          "ref": "ref11",
+          "url": [
+            "/Depotconfiguration/searchYardList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "新增车场",
+      "code": "6LVV6Y, 9Ztwxh, TnqZbb",
+      "function": [
+        {
+          "ref": "ref14",
+          "url": [
+            "/Depotconfiguration/addNewYard"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref4352",
+          "url": [
+            "/Depotconfiguration/addNewYard"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref4351",
+          "url": [
+            "/Depotconfiguration/addNewYard"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "编辑车场",
+      "code": "uJvxMT, 3A5Rjf, ERWKDt",
+      "function": [
+        {
+          "ref": "ref31",
+          "url": [
+            "/Depotconfiguration/updateYardDetails"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref4455",
+          "url": [
+            "/Depotconfiguration/updateYardDetails"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref4456",
+          "url": [
+            "/Depotconfiguration/updateYardDetails"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "删除车场数据",
+      "code": "EN2cYK",
+      "function": [
+        {
+          "ref": "ref6818",
+          "url": [
+            "/Depotconfiguration/deleteRowData"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "更新岗亭人员状态",
+      "code": "uhJn6q",
+      "function": [
+        {
+          "ref": "ref5969",
+          "url": [
+            "/Depotconfiguration/deactivateRule"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "添加岗亭人员",
+      "code": "MsivSB",
+      "function": [
+        {
+          "ref": "ref6606",
+          "url": [
+            "/Depotconfiguration/addPostPersonnel"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "查询计费规则",
+      "code": "OMtHhU",
+      "function": [
+        {
+          "ref": "ref5842",
+          "url": [
+            "/Depotconfiguration/searchBillingRules"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示车场计费规则",
+      "code": "aL88Qa, Q2zSpJ",
+      "function": [
+        {
+          "ref": "ref4217",
+          "url": [
+            "/Depotconfiguration/getYardBillingRules",
+            "/Depotconfiguration/getPaginatedYardBillingRules"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref4217",
+          "url": [
+            "/Depotconfiguration/getYardBillingRules",
+            "/Depotconfiguration/getPaginatedYardBillingRules"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示车场操作记录",
+      "code": "tVWCTz, ZT7Ame",
+      "function": [
+        {
+          "ref": "ref454",
+          "url": [
+            "/Depotconfiguration/getParkingLotOperationRecords",
+            "/Depotconfiguration/getPaginatedOperationRecords"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref454",
+          "url": [
+            "/Depotconfiguration/getParkingLotOperationRecords",
+            "/Depotconfiguration/getPaginatedOperationRecords"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示文件附件列表",
+      "code": "nEhan6, JbfG1J",
+      "function": [
+        {
+          "ref": "ref462",
+          "url": [
+            "/Depotconfiguration/getFileAttachmentList",
+            "/Depotconfiguration/getPaginatedFileAttachmentList"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref462",
+          "url": [
+            "/Depotconfiguration/getFileAttachmentList",
+            "/Depotconfiguration/getPaginatedFileAttachmentList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示岗亭人员列表",
+      "code": "lcKh42, H8aytI",
+      "function": [
+        {
+          "ref": "ref3757",
+          "url": [
+            "/Depotconfiguration/getPostPersonnelList",
+            "/Depotconfiguration/getPaginatedPostPersonnel"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref3757",
+          "url": [
+            "/Depotconfiguration/getPostPersonnelList",
+            "/Depotconfiguration/getPaginatedPostPersonnel"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示所有车场列表",
+      "code": "IgWIMk, SZ351T",
+      "function": [
+        {
+          "ref": "ref9368",
+          "url": [
+            "/Depotconfiguration/getAllParkingLots",
+            "/Depotconfiguration/getPaginatedParkingLots"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref9368",
+          "url": [
+            "/Depotconfiguration/getAllParkingLots",
+            "/Depotconfiguration/getPaginatedParkingLots"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "查看车场详情",
+      "code": "oNkQ70",
+      "function": [
+        {
+          "ref": "ref9368",
+          "url": [
+            "/Depotconfiguration/getParkingLotDetails"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845285598290509824": [
+    {
+      "functionName": "重置计费管理列表",
+      "code": "TtXsgB",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/Billingmanagement/getBillingManagementListB3O"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "查询计费管理列表",
+      "code": "1BYwoY",
+      "function": [
+        {
+          "ref": "ref4",
+          "url": [
+            "/Billingmanagement/getBillingManagementListB3O"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "删除计费管理记录",
+      "code": "HXJUHM",
+      "function": [
+        {
+          "ref": "ref1688",
+          "url": [
+            "/Billingmanagement/deleteBillingManagementRecord"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "默认显示计费管理列表",
+      "code": "dMvzI8",
+      "function": [
+        {
+          "ref": "ref17",
+          "url": [
+            "/Billingmanagement/getBillingManagementListB3O"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "分页显示计费管理列表",
+      "code": "x5lJoU",
+      "function": [
+        {
+          "ref": "ref17",
+          "url": [
+            "/Billingmanagement/getBillingManagementListB3O"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "加载规则信息和操作记录",
+      "code": "wkG4z8",
+      "function": [
+        {
+          "ref": "ref17",
+          "url": [
+            "/Billingmanagement/getOperationRecords"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845285698345631744": [
+    {
+      "functionName": "清空并刷新车辆列表",
+      "code": "C6e0q7",
+      "function": [
+        {
+          "ref": "ref53",
+          "url": [
+            "/Vehiclemanagement/getPaginatedVehicleList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "导出停车场用户数据",
+      "code": "yTYBFi",
+      "function": [
+        {
+          "ref": "ref55",
+          "url": [
+            "/Vehiclemanagement/getPaginatedVehicleList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "查询车辆列表",
+      "code": "rwKkpD",
+      "function": [
+        {
+          "ref": "ref52",
+          "url": [
+            "/Vehiclemanagement/getPaginatedVehicleList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示车辆出入记录",
+      "code": "OKt4PN",
+      "function": [
+        {
+          "ref": "ref65",
+          "url": [
+            "/Vehiclemanagement/getPaginatedVehicleList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示分页车辆列表",
+      "code": "A9VIe0",
+      "function": [
+        {
+          "ref": "ref65",
+          "url": [
+            "/Vehiclemanagement/getPaginatedVehicleList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845285853039951872": [
+    {
+      "functionName": "角色列表初始化显示",
+      "code": "V7xrrX, SmL6aX",
+      "function": [
+        {
+          "ref": "ref14",
+          "url": [],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref14",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "角色名称查找",
+      "code": "BL6mIG",
+      "function": [
+        {
+          "ref": "ref8",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "清空角色名称并刷新列表",
+      "code": "5dloCW",
+      "function": [
+        {
+          "ref": "ref10",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示新增弹窗",
+      "code": "FrcBPr",
+      "function": [
+        {
+          "ref": "ref11",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "新增角色数据",
+      "code": "00oFmW",
+      "function": [
+        {
+          "ref": "ref43",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭新增弹窗",
+      "code": "5PLrGw",
+      "function": [
+        {
+          "ref": "ref43",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "更新角色数据",
+      "code": "dzHAi0",
+      "function": [
+        {
+          "ref": "ref47",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭编辑弹窗",
+      "code": "SLICpG",
+      "function": [
+        {
+          "ref": "ref47",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示编辑弹窗",
+      "code": "vzUAyu",
+      "function": [
+        {
+          "ref": "ref17",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "删除角色数据",
+      "code": "pZU6kF",
+      "function": [
+        {
+          "ref": "ref16",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示功能权限弹窗",
+      "code": "gBrMik",
+      "function": [
+        {
+          "ref": "ref15",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "更新角色权限",
+      "code": "GR9uge",
+      "function": [
+        {
+          "ref": "ref52",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭功能权限弹窗",
+      "code": "XGJ3Lb",
+      "function": [
+        {
+          "ref": "ref52",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示菜单权限弹窗",
+      "code": "FQmsYK",
+      "function": [
+        {
+          "ref": "ref51",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "更新角色菜单",
+      "code": "CuHbRb",
+      "function": [
+        {
+          "ref": "ref56",
+          "url": [
+            "/Rolemanagement/updateRoleMenus"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭菜单权限弹窗",
+      "code": "pbvYAq",
+      "function": [
+        {
+          "ref": "ref56",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845285953279623168": [
+    {
+      "functionName": "关闭分配角色弹窗并更新用户角色",
+      "code": "UJ74Ek, X8n02S",
+      "function": [
+        {
+          "ref": "ref21",
+          "url": [
+            "/Usermanagement/getUserRoles"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref21",
+          "url": [
+            "/Usermanagement/getUserRoles"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "根据组织机构查询用户",
+      "code": "yd8jot, wjh3T3, SSs4hO",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/Usermanagement/getUsers"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref3",
+          "url": [
+            "/Usermanagement/getUsers"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref26",
+          "url": [
+            "/Usermanagement/getUsersVZ1"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示所有组织机构",
+      "code": "gqjYU2",
+      "function": [
+        {
+          "ref": "ref26",
+          "url": [
+            "/Usermanagement/getOrganizations"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示新增用户弹窗",
+      "code": "eVNlNt",
+      "function": [
+        {
+          "ref": "ref6",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示所有系统用户",
+      "code": "y4jhsI, B5ZzGv",
+      "function": [
+        {
+          "ref": "ref7",
+          "url": [
+            "/Usermanagement/getUsersVZ1"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref7",
+          "url": [
+            "/Usermanagement/getUsersVZ1"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "编辑用户信息",
+      "code": "gZP1Cq",
+      "function": [
+        {
+          "ref": "ref10",
+          "url": [
+            "/Usermanagement/updateUser"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "删除用户",
+      "code": "xB8M1z",
+      "function": [
+        {
+          "ref": "ref9",
+          "url": [
+            "/Usermanagement/deleteUser"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "新增用户并校验",
+      "code": "h6WLL2",
+      "function": [
+        {
+          "ref": "ref12",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭新增用户弹窗",
+      "code": "6XZIre",
+      "function": [
+        {
+          "ref": "ref12",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "切换用户状态",
+      "code": "XJZliG",
+      "function": [
+        {
+          "ref": "ref24",
+          "url": [
+            "/Usermanagement/toggleUserStatus"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "打开分配角色弹窗",
+      "code": "9q0oyN",
+      "function": [
+        {
+          "ref": "ref8",
+          "url": [
+            "/Usermanagement/getAllRoles"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "重置用户密码并校验",
+      "code": "9YyrK9, S9yNxh",
+      "function": [
+        {
+          "ref": "ref19",
+          "url": [
+            "/Usermanagement/resetUserPassword"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref19",
+          "url": [
+            "/Usermanagement/resetUserPassword"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示重置密码弹窗",
+      "code": "qEYfR1",
+      "function": [
+        {
+          "ref": "ref11",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845286022938624000": [
+    {
+      "functionName": "显示所有组织机构",
+      "code": "uarlSO, qiOgtN",
+      "function": [
+        {
+          "ref": "ref12",
+          "url": [
+            "/Organizationmanagement/getOrganizations"
+          ],
+          "is_show_variable": "ParentorganizationisShow1"
+        },
+        {
+          "ref": "ref23",
+          "url": [
+            "/Organizationmanagement/getOrganizations"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示所有系统用户",
+      "code": "NLlxRy",
+      "function": [
+        {
+          "ref": "ref15",
+          "url": [
+            "/Organizationmanagement/getSystemUsers"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "新增组织机构",
+      "code": "cvhPqY, 0seBzn",
+      "function": [
+        {
+          "ref": "ref11",
+          "url": [
+            "/Organizationmanagement/addOrganization"
+          ],
+          "is_show_variable": "AddedOrganizationPopupWindowisShow1"
+        },
+        {
+          "ref": "ref6",
+          "url": [
+            "/Organizationmanagement/addOrganization"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭新增组织机构弹窗",
+      "code": "DG3src",
+      "function": [
+        {
+          "ref": "ref11",
+          "url": [],
+          "is_show_variable": "AddedOrganizationPopupWindowisShow1"
+        }
+      ]
+    },
+    {
+      "functionName": "删除组织机构",
+      "code": "YI3go6",
+      "function": [
+        {
+          "ref": "ref25",
+          "url": [
+            "/Organizationmanagement/deleteOrganization"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "编辑组织机构",
+      "code": "9vq12s, 6CWD3I",
+      "function": [
+        {
+          "ref": "ref24",
+          "url": [
+            "/Organizationmanagement/updateOrganization"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref29",
+          "url": [
+            "/Organizationmanagement/updateOrganization"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭编辑组织机构弹窗",
+      "code": "2wI5vA",
+      "function": [
+        {
+          "ref": "ref29",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845286105574801408": [
+    {
+      "functionName": "清空并刷新菜单列表",
+      "code": "q8iYlk",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "查询菜单并显示",
+      "code": "Hl1MCc",
+      "function": [
+        {
+          "ref": "ref3",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "默认显示所有菜单",
+      "code": "3DA7Zj",
+      "function": [
+        {
+          "ref": "ref7",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "分页显示菜单数据",
+      "code": "M7tU6v",
+      "function": [
+        {
+          "ref": "ref7",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示新增菜单弹窗",
+      "code": "PJxoK9",
+      "function": [
+        {
+          "ref": "ref6",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "上级菜单下拉框显示所有菜单",
+      "code": "BLAP9b",
+      "function": [
+        {
+          "ref": "ref23",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "页面下拉框显示所有页面",
+      "code": "Nesp0g",
+      "function": [
+        {
+          "ref": "ref27",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "新增菜单并校验",
+      "code": "v4CBh3",
+      "function": [
+        {
+          "ref": "ref12",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭并清空弹窗",
+      "code": "oHwX58",
+      "function": [
+        {
+          "ref": "ref12",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "更新菜单数据",
+      "code": "RcISLd",
+      "function": [
+        {
+          "ref": "ref31",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭编辑菜单弹窗",
+      "code": "0Wzw9P",
+      "function": [
+        {
+          "ref": "ref31",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "显示编辑菜单弹窗并回显数据",
+      "code": "eXmOcM",
+      "function": [
+        {
+          "ref": "ref10",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "删除菜单数据",
+      "code": "FL5Gfe",
+      "function": [
+        {
+          "ref": "ref9",
+          "url": [
+            "/Menumanagement/deleteMenu"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1845286161157718016": [
+    {
+      "functionName": "创建停车订单",
+      "code": "fTmwUp",
+      "function": [
+        {
+          "ref": "ref1",
+          "url": [
+            "/Businesslogic/createParkingOrder"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "更新车辆订单支付状态",
+      "code": "ghV6vk",
+      "function": [
+        {
+          "ref": "ref4",
+          "url": [
+            "/Businesslogic/queryVehicleOrder",
+            "/Businesslogic/updatePaymentStatus"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1846358324254081024": [
+    {
+      "functionName": "显示业务字典数据",
+      "code": "kP63JX, L7HFyi",
+      "function": [
+        {
+          "ref": "ref28",
+          "url": [
+            "/Datadictionary/showEditModal"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref28",
+          "url": [
+            "/Datadictionary/showEditModal"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "字典详情显示",
+      "code": "hnTggZ",
+      "function": [
+        {
+          "ref": "ref28",
+          "url": [
+            "/Datadictionary/showEditDetailModal"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "查询业务字典",
+      "code": "LD3bxi",
+      "function": [
+        {
+          "ref": "ref33",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "新增业务字典",
+      "code": "1iiGck, XN0EsO, ymBIYi",
+      "function": [
+        {
+          "ref": "ref32",
+          "url": [
+            "/Datadictionary/addDictionaryDetail"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref18",
+          "url": [
+            "/Datadictionary/addDictionaryDetail"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref38",
+          "url": [
+            "/Datadictionary/addDictionaryDetail"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "删除业务字典",
+      "code": "KqDsgy",
+      "function": [
+        {
+          "ref": "ref30",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "编辑业务字典",
+      "code": "LJs5uV, pds9Gw, vrTwo3",
+      "function": [
+        {
+          "ref": "ref29",
+          "url": [
+            "/Datadictionary/showEditModal"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref21",
+          "url": [
+            "/Datadictionary/showEditModal"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref45",
+          "url": [
+            "/Datadictionary/showEditModal"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "删除字典详情",
+      "code": "jT3cIA",
+      "function": [
+        {
+          "ref": "ref22",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "关闭弹窗",
+      "code": "sHvWmN, PK2pND",
+      "function": [
+        {
+          "ref": "ref45",
+          "url": [],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref38",
+          "url": [],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "1846750856301510656": [
+    {
+      "functionName": "切换显示个人信息和消息列表",
+      "code": "qB8sIT",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/Personalcenter/handleTreeSelectionChange"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "加载个人消息数据并分页显示",
+      "code": "SrgaUc, gGHBJ2",
+      "function": [
+        {
+          "ref": "ref11",
+          "url": [
+            "/Personalcenter/getUserMessages"
+          ],
+          "is_show_variable": ""
+        },
+        {
+          "ref": "ref11",
+          "url": [
+            "/Personalcenter/getUserMessages"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "将所有未读消息标记为已读",
+      "code": "UlEnnu",
+      "function": [
+        {
+          "ref": "ref12",
+          "url": [
+            "/Personalcenter/updateAllMessagesToRead"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "填充个人信息表单",
+      "code": "v7BNXo",
+      "function": [
+        {
+          "ref": "ref36",
+          "url": [
+            "/Personalcenter/getUserInformation"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "更新个人信息",
+      "code": "hwO7XU",
+      "function": [
+        {
+          "ref": "ref34",
+          "url": [
+            "/Personalcenter/updateUserInformation"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "appCode": [
+    {
+      "functionName": "停车记录",
+      "code": "appParkingRecordgetList appParkingRecordgetDetail appParkingRecordgetBillingDetail",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appParkingRecord/getList",
+            "/appParkingRecord/getDetail",
+            "/appParkingRecord/getBillingDetail"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "车牌修正",
+      "code": "appPlateCorrectiongetList appPlateCorrectiongetDetail",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appPlateCorrection/getList",
+            "/appPlateCorrection/getDetail",
+            "/appPlateCorrection/update"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "订单分析",
+      "code": "appHomePagegetorder7DayUtilizationRate appHomePagegetorder7DayTurnoverRate",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appHomePage/order/get7DayUtilizationRate",
+            "/appHomePage/order/get7DayTurnoverRate",
+            "/appHomePage/order/getOrderCount"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "车场收入",
+      "code": "appHomePageincomeget7DayIncome appHomePageincomegetIncomeByType",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appHomePage/income/get7DayIncome",
+            "/appHomePage/income/getIncomeByType"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "首页",
+      "code": "appHomePagegetParkingList appHomePagegetIncome appHomePagegetOrderStatus",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appHomePage/getParkingList",
+            "/appHomePage/getIncome",
+            "/appHomePage/getOrderStatus",
+            "/appHomePage/getFlowRate"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "用户基础接口",
+      "code": "appUserInterFace",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appHomePage/getParkingList",
+            "/appHomePage/getIncome",
+            "/appHomePage/getOrderStatus",
+            "/appHomePage/getFlowRate"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "岗亭控制",
+      "code": "appSentryBoxControl",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appSentryBoxControl/open",
+            "/appSentryBoxControl/close",
+            "/appSentryBoxControl/capPicture",
+            "/appSentryBoxControl/getPic",
+            "/appSentryBoxControl/getSelect",
+            "/appSentryBoxControl/getList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "移动岗亭",
+      "code": "appSentryBoxControl2",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appSentryBoxControl/getChannelOut",
+            "/appSentryBoxControl/getChannelIn",
+            "/appSentryBoxControl/saveOrderCarAndOpen",
+            "/appSentryBoxControl/updatePic",
+            "/appSentryBoxControl/getPlateIsBlacklist",
+            "/appSentryBoxControl/getOrderByPlateNum",
+            "/appParkingRecord/getOrderDetail",
+            "/appSentryBoxControl/orderSettlement",
+            "/appSentryBoxControl/orderSettlementAndOpen"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    },
+    {
+      "functionName": "车场巡检",
+      "code": "DepotInspection",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appPatrolInspection/getList",
+            "/appPatrolInspection/check",
+            "/appPatrolInspection/processing",
+            "/appPatrolInspection/uploadPic"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "3512732213472312725": [
+    {
+      "functionName": "黑白名单接口",
+      "code": "blackAndWhiteList",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/vehicleListManager/importExcel",
+            "/vehicleListManager/downloadTemp",
+            "/vehicleListManager/download",
+            "/vehicleListManager/delete",
+            "/vehicleListManager/approval",
+            "/vehicleListManager/update",
+            "/vehicleListManager/insert",
+            "/vehicleListManager/getParkingList",
+            "/vehicleListManager/selectList",
+            "/vehicleListManager/getBillingRulesSelect",
+            "/vehicleListManager/deleteVehicleList",
+            "/vehicleListManager/insertVehicleList",
+            "/vehicleListManager/getList"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "5345220215345215226": [
+    {
+      "functionName": "异常数据",
+      "code": "异常数据",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appParkingRecord/getList",
+            "/appParkingRecord/getDetail",
+            "/appParkingRecord/getBillingDetail"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ],
+  "3462542403502642717": [
+    {
+      "functionName": "车辆欠费",
+      "code": "车辆欠费",
+      "function": [
+        {
+          "ref": "ref5",
+          "url": [
+            "/appParkingRecord/getList",
+            "/appParkingRecord/getDetail",
+            "/appParkingRecord/getBillingDetail"
+          ],
+          "is_show_variable": ""
+        }
+      ]
+    }
+  ]
+}

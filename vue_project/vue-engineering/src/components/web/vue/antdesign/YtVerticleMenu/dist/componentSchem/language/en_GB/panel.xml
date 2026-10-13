@@ -1,0 +1,75 @@
+<div>
+    <yt-row>
+        <yt-value comkey="customClassName" value="webVueAntYtVerticleMenuStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-input comkey="name" value="垂直菜单" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="openKeys"  isVariable="true" :value="[]" defaultValue="" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="selectedKeys"  isVariable="true" :value="[]" defaultValue="" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="位置与尺寸">
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"256","h":"560","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="图层">
+        <yt-row title="不透明度">
+            <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="边框">
+        <yt-line-segment comkey="border" :value='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="圆角">
+        <yt-circular-bead comkey="radius" :value='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="阴影">
+        <yt-shadow comkey="shadow" :value='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-tree-option
+        title="菜单项"
+        comkey="dataSource"
+        :value='[{"icon":"","key":"Option_1","label":"Option_1","title":"Option_1"},{"icon":"","key":"Navigation_1","label":"Navigation_1","title":"Navigation_1","children":[{"icon":"","key":"Option_2","label":"Option_2","title":"Option_2"},{"key":"Option_3","label":"Option_3","title":"Option_3"},{"key":"Submenu","label":"Submenu","title":"Submenu","children":[{"key":"Option_11","label":"Option_11","title":"Option_11"},{"key":"Option_12","label":"Option_12","title":"Option_12"}]}]}]'
+        :defaultValue='[]'
+        :transformConfig='{key:"key",title:"title"}' 
+        :dateTemplate='{key:"", label:"",title:"title"}'
+        type="array"
+        v-on:changeData="change"
+        v-on:setValue="setValue"/>
+    <yt-group-item title="一级菜单">
+        <yt-row title="文本">
+            <yt-text comkey="subMenuTextStyle" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="填充">
+            <yt-fill comkey="subMenuFillStyle" :showAllow="false" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="高度">
+            <yt-input comkey="subMenuHeight" value="32px" defaultValue="32px" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="子级菜单">
+        <yt-row title="文本">
+            <yt-text comkey="menuTextStyle"  :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="填充">
+            <yt-fill comkey="menuFillStyle"  :showAllow="false" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="高度">
+            <yt-input comkey="menuHeight" value="32px" defaultValue="32px" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="选中项">
+        <yt-row title="文本">
+            <yt-text comkey="selectedTextStyle" :value='{"fontStyle":{"type":"pure","color":"#1890ff","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"30px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#1890ff","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"30px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="填充">
+            <yt-fill comkey="selectedFillStyle" :showAllow="false" :value='{"allow":true,"background":"#e6f7ff","fillStyle":{"type":"pure","color":"#e6f7ff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#e6f7ff","fillStyle":{"type":"pure","color":"#e6f7ff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="悬浮项">
+        <yt-row title="文本">
+            <yt-text comkey="hoverTextStyle" :value='{"fontStyle":{"type":"pure","color":"#1890ff","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"30px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#1890ff","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"30px","letterSpacing":"0px","textAlign":"left","verticalAlign":"center","textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="填充">
+            <yt-fill comkey="hoverFillStyle" :showAllow="false" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+    </yt-group-item>
+</div>

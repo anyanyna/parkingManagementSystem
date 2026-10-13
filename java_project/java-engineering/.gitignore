@@ -1,0 +1,9 @@
+/server-web/target
+/operation-logs
+/logs-server-web
+/.idea
+/.idea/libraries
+/.settings
+/target
+/.project
+/.classpath

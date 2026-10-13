@@ -1,0 +1,1 @@
+var e={template:'<a-tree\n      ref\n      class="webVueAntYtTree _$customClassName$_"\n      v-model:expandedKeys="_$expandedKeys$_"\n      v-model:selectedKeys="_$selectedKeys$_"\n      :showLine="_$showLine$_"\n      :treeData="_$dataSource$_"\n      :disabled="_$disabled$_"\n      blockNode\n    >\n    </a-tree>',clazzType:"YtTree"};export{e as default};

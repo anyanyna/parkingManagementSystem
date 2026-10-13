@@ -1,0 +1,180 @@
+.webVueAntYtRangePicker {
+    color: var(--web-vue-ant-ytrangepicker-color);
+}
+.webVueAntYtRangePicker .ant-calendar-picker-container {
+    color: var(--web-vue-ant-ytrangepicker-piker-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-bg-color);
+    border-color: var(--web-vue-ant-ytrangepicker-piker-border-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-input-wrap {
+    border-color: var(--web-vue-ant-ytrangepicker-piker-content-border-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-input {
+    color: var(--web-vue-ant-ytrangepicker-input-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-header {
+    border-color: var(--web-vue-ant-ytrangepicker-piker-content-border-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-header .ant-calendar-next-century-btn,
+.webVueAntYtRangePicker .ant-calendar-header .ant-calendar-next-decade-btn,
+.webVueAntYtRangePicker .ant-calendar-header .ant-calendar-next-month-btn,
+.webVueAntYtRangePicker .ant-calendar-header .ant-calendar-next-year-btn,
+.webVueAntYtRangePicker .ant-calendar-header .ant-calendar-prev-century-btn,
+.webVueAntYtRangePicker .ant-calendar-header .ant-calendar-prev-decade-btn,
+.webVueAntYtRangePicker .ant-calendar-header .ant-calendar-prev-month-btn,
+.webVueAntYtRangePicker .ant-calendar-header .ant-calendar-prev-year-btn {
+    color: var(--web-vue-ant-ytrangepicker-piker-header-btn-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-range .ant-calendar-body,
+.webVueAntYtRangePicker .ant-calendar-range .ant-calendar-decade-panel-body,
+.webVueAntYtRangePicker .ant-calendar-range .ant-calendar-month-panel-body,
+.webVueAntYtRangePicker .ant-calendar-range .ant-calendar-year-panel-body {
+    border-color: var(--web-vue-ant-ytrangepicker-piker-content-border-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-last-month-cell .ant-calendar-date,
+.webVueAntYtRangePicker .ant-calendar-last-month-cell .ant-calendar-date:hover,
+.webVueAntYtRangePicker .ant-calendar-next-month-btn-day .ant-calendar-date,
+.webVueAntYtRangePicker .ant-calendar-next-month-btn-day .ant-calendar-date:hover {
+    color: var(--web-vue-ant-ytrangepicker-piker-disabled-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-disabled-cell .ant-calendar-date {
+    color: var(--web-vue-ant-ytrangepicker-piker-disabled-color);
+    background-color: var(--web-vue-ant-ytrangepicker-piker-disabled-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-selected-day .ant-calendar-date {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-selected-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-disabled-cell.ant-calendar-selected-day .ant-calendar-date:before {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-disabled-selected-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-date:hover {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-hover-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-today .ant-calendar-date {
+    border-color: var(--web-vue-ant-ytrangepicker-today-border-color);
+    color: var(--web-vue-ant-ytrangepicker-today-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-footer {
+    border-color: var(--web-vue-ant-ytrangepicker-calendar-header-border-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-footer .ant-calendar-footer-btn a {
+    color: var(--web-vue-ant-ytrangepicker-today-btn-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-date {
+    color: var(--web-vue-ant-ytrangepicker-piker-color);
+
+}
+
+
+/* 时间 */
+.webVueAntYtRangePicker .ant-calendar-time-picker,
+.webVueAntYtRangePicker .ant-calendar-time-picker-inner {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-time-picker-select {
+    border-color: var(--web-vue-ant-ytrangepicker-piker-content-border-color);
+
+}
+
+.webVueAntYtRangePicker li.ant-calendar-time-picker-select-option-selected {
+    background-color: var(--web-vue-ant-ytrangepicker-time-selected-bg-color);
+}
+
+/* 月 */
+.webVueAntYtRangePicker .ant-calendar-month-panel {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-month-panel-header {
+    border-color: var(--web-vue-ant-ytrangepicker-piker-content-border-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn,
+.webVueAntYtRangePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn,
+.webVueAntYtRangePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn,
+.webVueAntYtRangePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn,
+.webVueAntYtRangePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn,
+.webVueAntYtRangePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn,
+.webVueAntYtRangePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn,
+.webVueAntYtRangePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn {
+    color: var(--web-vue-ant-ytrangepicker-piker-header-btn-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-month-panel-month {
+    color: var(--web-vue-ant-ytrangepicker-piker-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month,
+.webVueAntYtRangePicker .ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month:hover {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-selected-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-header a:hover {
+    color: var(--web-vue-ant-ytrangepicker-piker-hover-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-month-panel-month:hover {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-hover-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-month-panel-cell-disabled .ant-calendar-month-panel-month,
+.webVueAntYtRangePicker .ant-calendar-month-panel-cell-disabled .ant-calendar-month-panel-month:hover {
+    color: var(--web-vue-ant-ytrangepicker-piker-disabled-color);
+    background-color: var(--web-vue-ant-ytrangepicker-piker-disabled-bg-color);
+}
+
+/* 年 */
+.webVueAntYtRangePicker .ant-calendar-year-panel-header {
+    border-color: var(--web-vue-ant-ytrangepicker-piker-content-border-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn,
+.webVueAntYtRangePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn,
+.webVueAntYtRangePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn,
+.webVueAntYtRangePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn,
+.webVueAntYtRangePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn,
+.webVueAntYtRangePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn,
+.webVueAntYtRangePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn,
+.webVueAntYtRangePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn {
+    color: var(--web-vue-ant-ytrangepicker-piker-header-btn-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year,
+.webVueAntYtRangePicker .ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year:hover {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-selected-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-header a:hover {
+    color: var(--web-vue-ant-ytrangepicker-piker-hover-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-year-panel-year:hover {
+    background-color: var(--web-vue-ant-ytrangepicker-piker-hover-bg-color);
+}
+
+.webVueAntYtRangePicker .ant-calendar-year-panel-cell-disabled .ant-calendar-year-panel-year,
+.webVueAntYtRangePicker .ant-calendar-year-panel-cell-disabled .ant-calendar-year-panel-year:hover {
+    color: var(--web-vue-ant-ytrangepicker-piker-disabled-color);
+    background-color: var(--web-vue-ant-ytrangepicker-piker-disabled-bg-color);
+}
+.webVueAntYtRangePicker .ant-picker-suffix .anticon, .webVueAntYtRangePicker .ant-picker-separator .anticon {
+    color: var(--web-vue-ant-ytrangepicker-select-suffix-color);
+}

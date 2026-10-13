@@ -1,0 +1,7 @@
+[
+    {"type":"change","name":"Value change event", "category": 1, "select": true},
+    {"type":"panelChange","name":"panelChange", "category": 1},
+    {"type":"init","name":"Initialize event", "category": 2},
+    {"type":"listenIn","name":"Value dependent event", "category": 2,"oldType":"dependency"},
+    {"type":"openChange","name":"openChange", "category": 3}
+]

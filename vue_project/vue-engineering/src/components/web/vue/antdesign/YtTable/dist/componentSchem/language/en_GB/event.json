@@ -1,0 +1,7 @@
+[
+    {"type":"init","name":"init","category":"1","select": true},
+    {"type":"onTableChange","name":"change","category":"1","oldType":"change","parameter":"pagination","eventParameter":"pagination"},
+    {"type":"onRowClick","name":"click","category":"2","oldType": "click","parameter":"record","eventParameter":"record"},
+    {"type":"onRowSelect","name":"select","category":"2","oldType": "select","parameter":"selectedRows","eventParameter":"selectedRows"},
+    {"type":"listenIn","name":"Value dependent event","category":"3","oldType": "dependency"}
+]

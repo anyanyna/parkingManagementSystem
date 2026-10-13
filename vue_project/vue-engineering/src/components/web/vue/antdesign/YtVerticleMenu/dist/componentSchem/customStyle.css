@@ -1,0 +1,164 @@
+.__customClassName__.ant-menu {
+    opacity: '__opacity__';
+    box-shadow: '__shadow.boxShadow__!important';
+    border-top-left-radius: '__radius.borderTopLeftRadius__';
+    border-top-right-radius: '__radius.borderTopRightRadius__';
+    border-bottom-left-radius: '__radius.borderBottomLeftRadius__';
+    border-bottom-right-radius: '__radius.borderBottomRightRadius__';
+    border-top: '__border.borderTop__';
+    border-right: '__border.borderRight__';
+    border-bottom: '__border.borderBottom__';
+    border-left: '__border.borderLeft__';
+    color: '__subMenuTextStyle.fontStyle.color__';
+    font-family: '__subMenuTextStyle.fontFamily__';
+    font-size: '__subMenuTextStyle.fontSize__';
+    font-weight: '__subMenuTextStyle.fontWeight__';
+    letter-spacing: '__subMenuTextStyle.letterSpacing__';
+    font-style: '__subMenuTextStyle.textStyle__';
+    background: '__subMenuFillStyle.background__';
+}
+
+.__customClassName__.ant-menu-inline div>li.ant-menu-item,
+.__customClassName__.ant-menu-inline div>li>.ant-menu-submenu-title,
+.__customClassName__.ant-menu-inline div>li.ant-menu-item.ant-menu-item-only-child {
+    height: '__subMenuHeight__';
+    padding-top: '__subMenuTextStyle.paddingTop__';
+    padding-right: '__subMenuTextStyle.paddingRight__';
+    padding-bottom: '__subMenuTextStyle.paddingBottom__';
+    padding-left: '__subMenuTextStyle.paddingLeft__'!important;
+}
+
+.__customClassName__ div>li.ant-menu-item,
+.__customClassName__ div>li>.ant-menu-submenu-title,
+.__customClassName__ div>li.ant-menu-item.ant-menu-item-only-child {
+    height: '__subMenuHeight__';
+    text-decoration: '__subMenuTextStyle.textDecoration__';
+    padding-top: '__subMenuTextStyle.paddingTop__';
+    padding-right: '__subMenuTextStyle.paddingRight__';
+    padding-bottom: '__subMenuTextStyle.paddingBottom__';
+    padding-left: '__subMenuTextStyle.paddingLeft__'!important;
+}
+
+.__customClassName__.ant-menu .ant-menu-submenu-inline .ant-menu-inline,
+.__customClassName__.ant-menu .yt-horizontal-menu-menu-sub-menu .ant-menu-item,
+.__customClassName__.ant-menu .yt-horizontal-menu-menu-sub-menu .ant-menu-submenu {
+    color: '__menuTextStyle.fontStyle.color__';
+    font-family: '__menuTextStyle.fontFamily__';
+    font-size: '__menuTextStyle.fontSize__';
+    font-weight: '__menuTextStyle.fontWeight__';
+    letter-spacing: '__menuTextStyle.letterSpacing__';
+    text-decoration: '__menuTextStyle.textDecoration__';
+    font-style: '__menuTextStyle.textStyle__';
+    background: '__menuFillStyle.background__';
+}
+.__customClassName__.ant-menu .ant-menu-vertical{
+    background: '__menuFillStyle.background__';
+}
+.__customClassName__.ant-menu-inline .ant-menu-submenu-inline .ant-menu-inline li.ant-menu-item,
+.__customClassName__.ant-menu-inline .ant-menu-submenu-inline .ant-menu-inline li.ant-menu-item-only-child,
+.__customClassName__.ant-menu-inline .ant-menu-submenu-inline .ant-menu-inline li>.ant-menu-submenu-title,
+.__customClassName__.ant-menu-vertical .ant-menu-submenu-popup .ant-menu-vertical li.ant-menu-item,
+.__customClassName__.ant-menu-vertical .ant-menu-submenu-popup .ant-menu-vertical li.ant-menu-item-only-child,
+.__customClassName__.ant-menu-vertical .ant-menu-submenu-popup .ant-menu-vertical li>.ant-menu-submenu-title {
+    height: '__menuHeight__';
+    padding-top: '__menuTextStyle.paddingTop__';
+    padding-right: '__menuTextStyle.paddingRight__';
+    padding-bottom: '__menuTextStyle.paddingBottom__';
+    padding-left: '__menuTextStyle.paddingLeft__'!important;
+}
+.__customClassName__.ant-menu .ant-menu-item-selected,
+.__customClassName__.ant-menu .yt-horizontal-menu-menu-sub-menu .ant-menu-item-selected,
+.__customClassName__ .ant-menu-submenu-selected>.ant-menu-submenu-title,
+.__customClassName__.ant-menu .sub-menu-selected>.ant-menu-submenu-title>.ant-menu-title-content{
+    color: '__selectedTextStyle.color__';
+
+}
+.__customClassName__.webVueAntYtVerticleMenu.ant-menu .ant-menu-item.ant-menu-item-selected,
+.__customClassName__.webVueAntYtVerticleMenu.ant-menu .sub-menu-selected>.ant-menu-submenu-title{
+    background: '__selectedFillStyle.background__';
+}
+
+.__customClassName__ .ant-menu-submenu:not(.ant-menu-item-selected):hover>.ant-menu-submenu-title>.ant-menu-submenu-arrow,
+.__customClassName__ .ant-menu-submenu:not(.ant-menu-item-selected):hover>.ant-menu-submenu-title>.ant-menu-submenu-expand-icon,
+.__customClassName__.ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):hover,
+.__customClassName__.ant-menu-light .ant-menu-submenu-title:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover{
+    color: '__hoverTextStyle.color__';
+    background: '__hoverFillStyle.background__!important';
+}
+
+.__customClassName__.ant-menu-light .ant-menu-submenu-title:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover,
+.__customClassName__.ant-menu-light.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected){
+    color: '__hoverTextStyle.color__';
+}
+.__customClassName__.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-item-active:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected),
+.__customClassName__.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-submenu-active:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected){
+    color: '__hoverTextStyle.color__';
+}
+
+.__customClassName__.webVueAntYtVerticleMenu .ant-menu-item.ant-menu-item-selected:hover,
+.__customClassName__ .ant-menu-submenu-title.ant-menu-item-selected:hover{
+    color: '__selectedTextStyle.color__';
+ }
+
+ #default_start
+.__customClassName__.ant-menu{
+    opacity: 1;
+    box-shadow: 0px 0px 0px 0px transparent!important;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    color: #000000A6;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    font-weight: Normal;
+    letter-spacing: 0px;
+    font-style: normal;
+    background: #ffffff;
+}
+.__customClassName__.ant-menu .ant-menu-submenu-inline .ant-menu-inline,.__customClassName__.ant-menu .yt-horizontal-menu-menu-sub-menu .ant-menu-item,.__customClassName__.ant-menu .yt-horizontal-menu-menu-sub-menu .ant-menu-submenu{
+    color: #000000A6;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    font-weight: Normal;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-style: normal;
+    background: #ffffff;
+}
+.__customClassName__.ant-menu .ant-menu-vertical{
+    background: #ffffff;
+}
+.__customClassName__.ant-menu .ant-menu-item-selected,.__customClassName__.ant-menu .yt-horizontal-menu-menu-sub-menu .ant-menu-item-selected,.__customClassName__ .ant-menu-submenu-selected>.ant-menu-submenu-title,.__customClassName__.ant-menu .sub-menu-selected>.ant-menu-submenu-title>.ant-menu-title-content{
+    color: #3C8EFF;
+}
+.__customClassName__.webVueAntYtVerticleMenu.ant-menu .ant-menu-item.ant-menu-item-selected,.__customClassName__.webVueAntYtVerticleMenu.ant-menu .sub-menu-selected>.ant-menu-submenu-title{
+    background: #E6EFFE;
+}
+.__customClassName__ .ant-menu-submenu:not(.ant-menu-item-selected):hover>.ant-menu-submenu-title>.ant-menu-submenu-arrow,.__customClassName__ .ant-menu-submenu:not(.ant-menu-item-selected):hover>.ant-menu-submenu-title>.ant-menu-submenu-expand-icon,.__customClassName__.ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):hover,.__customClassName__.ant-menu-light .ant-menu-submenu-title:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover{
+    color: #3C8EFF;
+    background: #ffffff!important;
+}
+.__customClassName__.ant-menu-light .ant-menu-submenu-title:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover,.__customClassName__.ant-menu-light.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected){
+    color: #3C8EFF;
+}
+.__customClassName__.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-item-active:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected),.__customClassName__.webVueAntYtVerticleMenu.ant-menu-light .ant-menu-submenu-active:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected){
+    color: #3C8EFF;
+}
+.__customClassName__.webVueAntYtVerticleMenu .ant-menu-item.ant-menu-item-selected:hover,.__customClassName__ .ant-menu-submenu-title.ant-menu-item-selected:hover{
+    color: #3C8EFF;
+}
+ #default_end
+#static_start
+.webVueAntYtVerticleMenu {
+    width: 100%;
+    height: 100%;
+}
+.webVueAntYtVerticleMenu div>li>.ant-menu-submenu-title {
+    height: 100%;
+}
+#static_end

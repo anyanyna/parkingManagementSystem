@@ -1,0 +1,6 @@
+:root{
+    --web-vue-antdesign-button-font-size: 14px;
+}
+.webVueAntButton {
+    font-size: var(--web-vue-antdesign-button-font-size);
+}

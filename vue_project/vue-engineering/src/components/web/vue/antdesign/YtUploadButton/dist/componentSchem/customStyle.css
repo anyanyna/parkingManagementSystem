@@ -1,0 +1,112 @@
+#default_start
+#default_end
+
+/* .__customClassName__ {
+    border-top: '__border.borderTop__';
+    border-right: '__border.borderRight__';
+    border-bottom: '__border.borderBottom__';
+    border-left: '__border.borderLeft__';
+} */
+
+.__customFormItemClassName__{
+    opacity: '__opacity__';
+    flex-direction:'__flexDirection__';
+}
+.__customFormItemClassName__ .ant-form-item-explain {
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+}
+.__customFormItemClassName__ .ant-form-item-label label {
+    text-decoration: '__labelText.textDecoration__';
+    font-style: '__labelText.textStyle__';
+    color: '__labelText.fontStyle.color__';
+    font-family: '__labelText.fontFamily__';
+    font-size: '__labelText.fontSize__';
+    font-weight: '__labelText.fontWeight__';
+    width:'__labelWidth__';
+    padding-top: '__labelText.paddingTop__';
+    padding-right: '__labelText.paddingRight__';
+    padding-bottom: '__labelText.paddingBottom__';
+    padding-left: '__labelText.paddingLeft__';
+}
+.__customFormItemClassName__ .ant-form-item-label label .label-content {
+    text-align: '__labelText.textAlign__';
+    text-align-last: '__labelText.textAlign__';
+}
+/* 组件 */
+.__customFormItemClassName__ .ant-upload-list {
+    max-width: '__size.width__px';
+    max-height: '__size.height__px';
+}
+
+.__customUploadButtonClassName__ .ant-btn {
+    color: '__buttonContentStyle.fontStyle.color__';
+    font-family: '__buttonContentStyle.fontFamily__';
+    font-weight: '__buttonContentStyle.fontWeight__';
+    font-size: '__buttonContentStyle.fontSize__';
+    text-align: '__buttonContentStyle.textAlign__';
+    font-style: '__buttonContentStyle.textStyle__';
+    border-top-left-radius: '__radius.borderTopLeftRadius__';
+    border-top-right-radius: '__radius.borderTopRightRadius__';
+    border-bottom-left-radius: '__radius.borderBottomLeftRadius__';
+    border-bottom-right-radius: '__radius.borderBottomRightRadius__';
+    background-color: '__fill.background__';
+    border-top: '__border.borderTop__';
+    border-right: '__border.borderRight__';
+    border-bottom: '__border.borderBottom__';
+    border-left: '__border.borderLeft__';
+    box-shadow: '__shadow.boxShadow__';
+}
+.__customUploadButtonClassName__ .ant-btn span {
+    text-decoration: '__buttonContentStyle.textDecoration__';
+}
+
+#static_start
+.webVueAntUploadButton  {
+    flex-wrap: nowrap;
+}
+.webVueAntUploadButton ,
+.webVueAntUploadButton .ant-form-item-control-input,
+.webVueAntUploadButton .ant-form-item-control-input .ant-form-item-control-input-content {
+    width: 100%;
+    height: 100%;
+}
+.webVueAntUploadButton .ant-form-item-control-input {
+    min-height: unset;
+}
+.webVueAntUploadButton .ant-form-item-label {
+    flex-shrink: 0;
+    padding: 0;
+    text-align: left;
+}
+.webVueAntUploadButton .ant-form-item-label label {
+    width: 100%;
+    height: 100%;
+}
+.webVueAntUploadButton .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+  margin-top: 4px;
+}
+.webVueAntUploadButton .ant-form-item-label label .label-content{
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.webVueAntUploadButton .ant-form-item-label>label.ant-form-item-no-colon:after {
+    display: none;
+}
+.webVueAntUploadButton .ant-form-item-label label .ant-form-item-content {
+    white-space: nowrap;
+}
+.webVueAntUploadButton.hide-label .ant-form-item-label {
+    display: none;
+}
+.webVueAntUploadButton .ant-form-item-content:focus{
+    outline: none;
+}
+.webVueAntUploadButton .ant-btn, .webVueAntUploadButton .ant-upload {
+    width: 100%;
+    height: 100%;
+}
+#static_end

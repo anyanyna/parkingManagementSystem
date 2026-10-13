@@ -1,0 +1,62 @@
+:root{
+    --web-vue-ant-ytspan-color:rgba(0, 0, 0, 0.88);
+}
+.webVueAntYtSpan {
+    color: var(--web-vue-ant-ytspan-color);
+}
+:root{
+}
+.webVueAntYtRectangle {
+}
+:root{
+    --web-vue-antdesign-button-font-size: 14px;
+}
+.webVueAntButton {
+    font-size: var(--web-vue-antdesign-button-font-size);
+}
+:root{
+    --web-vue-ant-YtTable-pagination-hover-color: #1890ff;
+    --web-vue-ant-YtTable-pagination-hover-border-color: #1890ff;
+}
+.webVueAntYtTable .ant-pagination li:not(.ant-pagination-disabled):hover {
+    border-color: var(--web-vue-ant-YtTable-pagination-hover-border-color) !important;
+}
+.webVueAntYtTable .ant-pagination li:not(.ant-pagination-disabled):hover a {
+    color: var(--web-vue-ant-YtTable-pagination-hover-color) !important;
+}
+.webVueAntYtTable .ant-pagination li:not(.ant-pagination-disabled) .ant-select:hover .ant-select-selector {
+    border-color: var(--web-vue-ant-YtTable-pagination-hover-border-color) !important;
+}
+.webVueAntYtTable .ant-pagination li:not(.ant-pagination-disabled) .ant-pagination-options-quick-jumper input:hover {
+    border-color: var(--web-vue-ant-YtTable-pagination-hover-border-color) !important;
+}
+:root{
+    --web-vue-antdesign-input-font-size: 14px;
+}
+.webVueAntinput {
+    font-size: var(--web-vue-antdesign-input-font-size);
+}
+:root{
+}
+.webVueAntYtIcon {
+}
+:root{
+    --web-vue-ant-YtModal-color:rgba(0, 0, 0, 0.88);
+    --web-vue-ant-YtModal-border-color:#D8D8D8;
+}
+.webVueAntYtModal {
+    color: var(--web-vue-ant-YtModal-color);
+}
+.webVueAntYtModal .yt-custom-modal .yt-custom-modal-header::after{
+    background: var( --web-vue-ant-YtModal-border-color);
+}
+.webVueAntForm{
+    width: 100%;
+    height: 100%;
+}
+:root{
+    --web-vue-antdesign-input-number-font-size: 14px;
+}
+.webVueAntinputNumber {
+    font-size: var(--web-vue-antdesign-input-number-font-size);
+}

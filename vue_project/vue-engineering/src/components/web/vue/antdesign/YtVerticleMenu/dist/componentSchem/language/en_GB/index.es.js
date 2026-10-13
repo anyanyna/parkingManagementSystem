@@ -1,0 +1,1 @@
+var e={template:'\n  <yt-vertical-menu-menu\n    ref\n    class="webVueAntYtVerticleMenu _$customClassName$_"\n    v-model:openKeys="_$openKeys$_"\n    v-model:selectedKeys="_$selectedKeys$_"\n    :items="_$dataSource$_"\n  />',clazzType:"YtVerticleMenu"};export{e as default};

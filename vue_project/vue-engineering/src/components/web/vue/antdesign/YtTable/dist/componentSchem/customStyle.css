@@ -1,0 +1,237 @@
+.__customClassName__ {
+    opacity:'__opacity__';
+}
+.__customClassName__ .ant-table {
+    box-shadow: '__tableShadow.boxShadow__';
+    border-top-left-radius: '__tableRadius.borderTopLeftRadius__';
+    border-top-right-radius: '__tableRadius.borderTopRightRadius__';
+    border-bottom-left-radius: '__tableRadius.borderBottomLeftRadius__';
+    border-bottom-right-radius: '__tableRadius.borderBottomRightRadius__';
+    border-top: '__tableBorder.borderTop__';
+    border-right: '__tableBorder.borderRight__';
+    border-bottom: '__tableBorder.borderBottom__';
+    border-left: '__tableBorder.borderLeft__'; 
+}
+.__customClassName__ .ant-table th:first-child {
+    border-top-left-radius: '__tableRadius.borderTopLeftRadius__ !important';
+}
+.__customClassName__ .ant-table th:last-child {
+    border-top-right-radius: '__tableRadius.borderTopRightRadius__ !important';
+}
+.__customClassName__ .ant-table tr:last-child td:first-child {
+    border-bottom-left-radius: '__tableRadius.borderBottomLeftRadius__ !important';
+}
+.__customClassName__ .ant-table tr:last-child td:last-child {
+    border-bottom-right-radius: '__tableRadius.borderBottomRightRadius__ !important';
+}
+.__customClassName__ .ant-table .ant-table-thead tr, .__customClassName__ .ant-table .ant-table-thead tr th div:first-child {
+    height: '__headerHeight__';
+}
+.__customClassName__ .ant-table .ant-table-thead tr th div.ant-table-selection {
+    line-height: '__headerHeight__';
+}
+.__customClassName__ .ant-table .ant-table-thead tr th {
+    background: '__headerBackground.background__';
+}
+.__customClassName__ .ant-table .ant-table-thead tr span.th-text {
+    color: '__headerText.fontStyle.color__';
+    font-family: '__headerText.fontFamily__';
+    font-size: '__headerText.fontSize__';
+    font-weight: '__headerText.fontWeight__';
+    line-height: '__headerText.lineHeight__';
+    letter-spacing: '__headerText.letterSpacing__';
+    font-style: '__headerText.textStyle__';
+    text-align: '__headerText.textAlign__';
+    text-align-last: '__headerText.textAlign__';
+    text-decoration: '__headerText.textDecoration__';
+    padding-top: '__headerText.paddingTop__';
+    padding-right: '__headerText.paddingRight__';
+    padding-bottom: '__headerText.paddingBottom__';
+    padding-left: '__headerText.paddingLeft__';
+}
+.__customClassName__ .ant-table tbody tr td {
+    height: '__rowHeight__'
+}
+.__customClassName__ .ant-table tbody tr td .ant-checkbox-wrapper {
+    line-height: '__rowHeight__';
+}
+.__customClassName__ .ant-table tbody tr td {
+    background: '__rowBackground.background__';
+}
+.__customClassName__ .ant-table thead tr th,.__customClassName__ .ant-table .ant-table-tbody tr:not(:last-child) td {
+    border-bottom: '__horizontalBorder.width__px solid __horizontalBorder.color__';
+}
+.__customClassName__ .ant-table thead tr th:not(:last-child),.__customClassName__ .ant-table .ant-table-tbody tr td:not(:last-child) {
+    border-right: '__verticalBorder.width__px solid __verticalBorder.color__';
+}
+.__customClassName__.ant-table-striped .ant-table tbody tr:nth-child(2n-1) td {
+    background: '__RowBackground1.background__'
+}
+.__customClassName__.ant-table-striped .ant-table tbody tr:nth-child(2n) td {
+    background: '__RowBackground2.background__'
+}
+.__customClassName__ .ant-table tbody tr:not(.ant-table-row-selected):hover td {
+    background: '__hoverBackground.background__ !important';
+}
+.__customClassName__ .ant-table tbody tr:not(.ant-table-row-selected):hover td span.td-text {
+    color: '__hoverText.background__ !important';
+}
+.__customClassName__ .ant-table-tbody tr.ant-table-row-selected td {
+    background: '__selectBackground.background__ !important';
+}
+.__customClassName__ .ant-table-tbody tr.ant-table-row-selected td span.td-text {
+    color: '__selectText.background__ !important';
+}
+.__customClassName__ .ant-pagination li:not(.ant-pagination-options), .__customClassName__ .ant-pagination button, .__customClassName__ .ant-pagination li .ant-select .ant-select-selector, .__customClassName__ .ant-pagination li input {
+    border-top-left-radius: '__paginationRadius.borderTopLeftRadius__';
+    border-top-right-radius: '__paginationRadius.borderTopRightRadius__';
+    border-bottom-left-radius: '__paginationRadius.borderBottomLeftRadius__';
+    border-bottom-right-radius: '__paginationRadius.borderBottomRightRadius__';
+    background: '__paginationFill.background__';
+    color: '__paginationText.fontStyle.color__';
+    font-family: '__paginationText.fontFamily__';
+    font-size: '__paginationText.fontSize__';
+    font-weight: '__paginationText.fontWeight__';
+    line-height: '__paginationText.lineHeight__';
+    letter-spacing: '__paginationText.letterSpacing__';
+    text-align: '__paginationText.textAlign__';
+    text-align-last: '__paginationText.textAlign__';
+    font-style: '__paginationText.textStyle__';
+    text-decoration: '__paginationText.textDecoration__';
+}
+.__customClassName__ .ant-pagination button, .__customClassName__ .ant-pagination li .ant-select .ant-select-selector, .__customClassName__ .ant-pagination li input, .__customClassName__ .ant-pagination li a, .__customClassName__ .ant-pagination li .ant-pagination-options-quick-jumper {
+    padding-top: '__paginationText.paddingTop__';
+    padding-right: '__paginationText.paddingRight__';
+    padding-bottom: '__paginationText.paddingBottom__';
+    padding-left: '__paginationText.paddingLeft__';
+}
+.__customClassName__ .ant-pagination li:not(.ant-pagination-options),
+.__customClassName__ .ant-pagination li.ant-pagination-options .ant-pagination-options-size-changer.ant-select .ant-select-selector,
+.__customClassName__ .ant-pagination li.ant-pagination-options .ant-pagination-options-quick-jumper input{
+    border-top: '__paginationBorder.borderTop__';
+    border-right: '__paginationBorder.borderRight__';
+    border-bottom: '__paginationBorder.borderBottom__';
+    border-left: '__paginationBorder.borderLeft__';
+}
+.__customClassName__ .ant-pagination li button{
+    border: none;
+}
+.__customClassName__ .ant-pagination li a, .__customClassName__ .ant-pagination li .ant-pagination-options-quick-jumper {
+    color: '__paginationText.fontStyle.color__';
+    font-family: '__paginationText.fontFamily__';
+    font-size: '__paginationText.fontSize__';
+    font-weight: '__paginationText.fontWeight__';
+    line-height: '__paginationText.lineHeight__';
+    letter-spacing: '__paginationText.letterSpacing__';
+    text-align: '__paginationText.textAlign__';
+    text-align-last: '__paginationText.textAlign__';
+    font-style: '__paginationText.textStyle__';
+    text-decoration: '__paginationText.textDecoration__';
+}
+.__customClassName__ .ant-pagination li.ant-pagination-item-active {
+    background: '__paginationSelectFill.background__';
+    border-top: '__paginationSelectBorder.borderTop__';
+    border-right: '__paginationSelectBorder.borderRight__';
+    border-bottom: '__paginationSelectBorder.borderBottom__';
+    border-left: '__paginationSelectBorder.borderLeft__'; 
+}
+.__customClassName__ .ant-pagination li.ant-pagination-item-active a {
+    color: '__paginationSelectText.fontStyle.color__';
+    font-family: '__paginationSelectText.fontFamily__';
+    font-size: '__paginationSelectText.fontSize__';
+    font-weight: '__paginationSelectText.fontWeight__';
+    line-height: '__paginationSelectText.lineHeight__';
+    letter-spacing: '__paginationSelectText.letterSpacing__';
+    text-align: '__paginationSelectText.textAlign__';
+    text-align-last: '__paginationSelectText.textAlign__';
+    font-style: '__paginationSelectText.textStyle__';
+    text-decoration: '__paginationSelectText.textDecoration__';
+}
+
+#static_start
+.webVueAntYtTable {
+    display: inline-block;
+}
+.webVueAntYtTable .ant-radio-input {
+    display: none;
+}
+.webVueAntYtTable thead tr th div:first-child {
+    display: flex !important;
+    align-items: center;
+}
+.webVueAntYtTable thead tr th:before {
+    content: none !important;
+}
+.webVueAntYtTable thead tr th:not(.ant-table-selection-column), .webVueAntYtTable .ant-table-tbody tr td:not(.ant-table-selection-column) {
+    padding: 0 !important;
+}
+.webVueAntYtTable thead tr th.ant-table-selection-column, .webVueAntYtTable .ant-table-tbody tr td.ant-table-selection-column {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.webVueAntYtTable .ant-table-tbody tr td, .webVueAntYtTable thead tr th {
+    position: relative;
+}
+.webVueAntYtTable .ant-table-tbody tr td .td-text, .webVueAntYtTable thead tr th .th-text {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.webVueAntYtTable tr td .td-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.webVueAntYtTable .ant-table-tbody tr td {
+    border-top: 0 !important;
+    position: relative !important;
+}
+.webVueAntYtTable .ant-table-tbody tr td .ant-radio-wrapper {
+    align-items: center;
+}
+.webVueAntYtTable .ant-table-tbody tr:last-child td {
+    border-bottom: 0 !important;
+}
+.webVueAntYtTable .ant-pagination {
+    display: flex;
+}
+
+.webVueAntYtTable .add-pointer {
+    display: flex !important;
+}
+.webVueAntYtTable .ant-table-thead .ant-table-cell-scrollbar {
+    width: 6px;
+}
+.webVueAntYtTable .ant-table-header colgroup col:not(.ant-table-selection-col) {
+    width: auto !important;
+}
+:focus-visible {
+    outline: none;
+}
+.webVueAntYtTable .ant-table-body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+}
+.webVueAntYtTable .ant-table-body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+.webVueAntYtTable.custom-table .ant-table-content {
+    overflow: hidden !important;
+    max-height: unset !important;
+}
+.webVueAntYtTable td .customTableTemplate {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.webVueAntYtTable .ant-table thead tr th:last-of-type,.webVueAntYtTable .ant-table .ant-table-tbody tr td:last-of-type {
+   border-right: 0 !important; 
+}
+#static_end

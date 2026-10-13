@@ -1,0 +1,102 @@
+
+.webVueAntUploadButtonFormItem{
+opacity: 1;
+flex-direction: row;
+}
+.webVueAntUploadButtonFormItem .ant-form-item-label label{
+text-decoration: none;
+font-style: normal;
+color: #333333;
+font-family: Microsoft YaHei;
+font-size: 14px;
+font-weight: Normal;
+width: 53px;
+padding-top: 0px;
+padding-right: 10px;
+padding-bottom: 0px;
+padding-left: 0px;
+}
+.webVueAntUploadButtonFormItem .ant-form-item-label label .label-content{
+text-align: left;
+text-align-last: left;
+}
+.webVueAntUploadButtonFormItem.row .ant-form-item-control{
+width: calc(100% - 53px);
+}
+.webVueAntUploadButtonFormItem .ant-upload-list{
+max-width: 208px;
+max-height: 88px;
+}
+.webVueAntUploadButtonStyle .ant-btn{
+color: #000000A6;
+font-family: Microsoft YaHei;
+font-weight: Normal;
+font-size: 14px;
+text-align: center;
+font-style: normal;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+background-color: #FFFFFF;
+border-top: 1px solid #D9D9D9;
+border-right: 1px solid #D9D9D9;
+border-bottom: 1px solid #D9D9D9;
+border-left: 1px solid #D9D9D9;
+box-shadow: 0px 0px 0px 0px transparent;
+}
+.webVueAntUploadButtonStyle .ant-btn span{
+text-decoration: none;
+}
+
+.webVueAntUploadButton  {
+    flex-wrap: nowrap;
+}
+.webVueAntUploadButton ,
+.webVueAntUploadButton .ant-form-item-control-input,
+.webVueAntUploadButton .ant-form-item-control-input .ant-form-item-control-input-content {
+    width: 100%;
+    height: 100%;
+}
+.webVueAntUploadButton .ant-form-item-control-input {
+    min-height: unset;
+}
+.webVueAntUploadButton .ant-form-item-label {
+    flex-shrink: 0;
+    padding: 0;
+    text-align: left;
+}
+.webVueAntUploadButton .ant-form-item-label label {
+    width: 100%;
+    height: 100%;
+}
+.webVueAntUploadButton .ant-form-item-explain {
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+}
+.webVueAntUploadButton .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+  margin-top: 4px;
+}
+.webVueAntUploadButton .ant-form-item-label label .label-content{
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.webVueAntUploadButton .ant-form-item-label>label.ant-form-item-no-colon:after {
+    display: none;
+}
+.webVueAntUploadButton .ant-form-item-label label .ant-form-item-content {
+    white-space: nowrap;
+}
+.webVueAntUploadButton.hide-label .ant-form-item-label {
+    display: none;
+}
+.webVueAntUploadButton .ant-form-item-content:focus{
+    outline: none;
+}
+.webVueAntUploadButton .ant-btn, .webVueAntUploadButton .ant-upload {
+    width: 100%;
+    height: 100%;
+}

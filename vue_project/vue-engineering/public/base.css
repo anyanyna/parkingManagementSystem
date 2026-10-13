@@ -1,0 +1,60 @@
+/* 默认样式 */
+body {
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+/* 针对平板设备的样式 */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* 字体大小减小 */
+        background-color: lightgray; /* 背景颜色变为浅灰色 */
+    }
+
+    h1 {
+        font-size: 24px; /* h1 字体大小 */
+    }
+}
+
+/* 针对手机设备的样式 */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* 字体大小进一步减小 */
+        background-color: lightblue; /* 背景颜色变为浅蓝色 */
+    }
+
+    h1 {
+        font-size: 20px; /* h1 字体大小 */
+    }
+
+    p {
+        line-height: 1.5; /* 段落行高 */
+    }
+}
+
+.flexRow{
+    display: flex;
+    position: relative;
+    width:'100%';
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.spaceStart{
+    justify-content: flex-start;
+}
+.spaceEnd{
+    justify-content: flex-end;
+}
+.spaceAround{
+    justify-content: space-around;
+}
+.spaceBetween{
+    justify-content: space-between;
+}
+.spaceCenter{
+    justify-content: center;
+}

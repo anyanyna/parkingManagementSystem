@@ -1,0 +1,98 @@
+<div>
+    <yt-row>
+        <yt-value comkey="popupKey" value="popupKey" defaultValue="popupKey" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="popupKeyId" value="popupKeyId" defaultValue="popupKeyId" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="customClassName" value="webVueAntYtRangePickerStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="customFormItemClassName" value="webVueAntYtRangePickerFormItem" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-input comkey="name" value="日期范围" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="labelName" value="标题：" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="rules" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="states" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"></yt-value>
+        <yt-value comkey="computedName" value="rangePickerState" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row>
+        <yt-status :statuses='[]' isVariable="true" comkey="stateKey" value="2" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue" v-on:changeStatus="changeStatus"></yt-status>
+    </yt-row>
+    <yt-row>
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"352","h":"32","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row title="不透明度">
+        <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="标签" :isOpen="true">
+        <yt-row title="显示">
+            <yt-switch comkey="showLabel" checkedValue="show-label" unCheckedValue="hide-label" value="show-label" defaultValue="show-label" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="位置">
+            <yt-radio-button comkey="flexDirection" value="row" defaultValue="row" :options='[{"value":"row","label":"左"},{"value":"column","label":"上"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="文本">
+            <yt-text comkey="labelText" :value='{"fontStyle":{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","textAlign":"left","textDecoration":"none","textStyle":"normal" ,"paddingTop": "0px","paddingRight": "10px","paddingBottom": "0px","paddingLeft": "0px"}' :defaultValue='{}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="宽度">
+            <yt-input-number comkey="labelWidth" value="53px" defaultValue="" type="string" unit="px" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-button-auto-size comkey="autoSize" :value='{"autoWidth":"true"}' :defaultValue='{"autoWidth":"true"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="外观" :isOpen="true">
+        <yt-circular-bead comkey="radius" :value='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-fill comkey="fill" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"title":"填充","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#FFFFFF","fillStyle":{"title":"填充","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-line-segment comkey="border" :value='{"allow":true,"borderTop":"1px solid #CDCDCD","borderRight":"1px solid #CDCDCD","borderBottom":"1px solid #CDCDCD","borderLeft":"1px solid #CDCDCD","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#CDCDCD","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #CDCDCD","borderRight":"1px solid #CDCDCD","borderBottom":"1px solid #CDCDCD","borderLeft":"1px solid #CDCDCD","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#CDCDCD","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-shadow comkey="shadow" :value='{"allow":false,"boxShadow":"0px 0px 0px 0px #FFFFFF","shadowStyle":{"title":"阴影", "type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"0px 0px 0px 0px #FFFFFF","shadowStyle":{"title":"阴影", "type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="文本" :isOpen="true">
+        <yt-text comkey="text" :value='{"fontStyle":{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","letterSpacing":"0px","textDecoration":"none","textStyle":"normal" ,"paddingTop": "0px","paddingRight": "10px","paddingBottom": "0px","paddingLeft": "12px"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","letterSpacing":"0px","textDecoration":"none","textStyle":"normal" ,"paddingTop": "0px","paddingRight": "10px","paddingBottom": "0px","paddingLeft": "12px"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="输入提示">
+        <yt-row title="开始日期">
+            <yt-input comkey="placeholderStart" value='开始日期' defaultValue='开始日期' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="结束日期">
+            <yt-input comkey="placeholderEnd" value='结束日期' defaultValue='结束日期' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="文本" float="left">
+           <yt-color-picker comkey="placeholderColor" :value='{"type":"pure","color":"#999999","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#999999","gradient":"","image":"none","repeat":"norepeat","align":"left"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="下拉框外观">
+        <yt-circular-bead comkey="dropdownRadius" :value='{"borderTopLeftRadius":"2px","borderTopRightRadius":"2px","borderBottomLeftRadius":"2px","borderBottomRightRadius":"2px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"0px","borderTopRightRadius":"0px","borderBottomLeftRadius":"0px","borderBottomRightRadius":"0px","showOneInput":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-fill comkey="dropdownFill" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto","title": "填充"}}' :defaultValue='{"disabled":false,"opacity":100,"fillColor":{"type":"pure","color":"","image":"none","repeat":"norepeat","align":"auto","fillMode":"auto","title": "填充"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-line-segment comkey="dropdownBorder" :value='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center","title": "描边"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center","title": "描边"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-shadow comkey="dropdownShadow" :value='{"allow":true,"boxShadow":"0px 0px 10px 0px rgba(153,153,153,0.3)","shadowStyle":{"type":"pure","color":"rgba(153,153,153,0.3)","image":"none","repeat":"no-repeat","align":"center","title": "阴影"}}' :defaultValue='{"allow":true,"boxShadow":"0px 0px 10px 0px rgba(153,153,153,0.3)","shadowStyle":{"type":"pure","color":"rgba(153,153,153,0.3)","image":"none","repeat":"no-repeat","align":"center","title": "阴影"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-row title="下拉文本" float="left">
+        <yt-color-picker comkey="dropdownColor" :value='{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#333333","gradient":"","image":"none","repeat":"norepeat","align":"left"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="日期面板">
+        <yt-row title="类型">
+            <yt-select comkey="mode" value="day" defaultValue="day" :options='[{"value":"second","label":"秒"},{"value":"minute","label":"分"},{"value":"hour","label":"时"},{"value":"day","label":"天"},{"value":"week","label":"周"},{"value":"month","label":"月"},{"value":"year","label":"年"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="可选日期">
+            <yt-date-piker comkey="startDate" value="" defaultValue="" placeholder="起始时间" :showTime="true" format="YYYY-MM-DD HH:mm:ss" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title=" ">
+            <yt-date-piker comkey="endDate" value="" defaultValue="" placeholder="结束时间" :showTime="true" format="YYYY-MM-DD HH:mm:ss" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="禁选日期">
+            <yt-textarea comkey="disabledDates" placeholder='日期示例:["20240101","20240102",...]' :value='[]' :defaultValue='[]' type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="功能" :isOpen="true">
+        <yt-row title="默认值">
+            <!-- <yt-textarea comkey="value" isForm="true" isVariable="true" :value='[]' :defaultValue='[]' type="array" v-on:changeData="change" v-on:setValue="setValue"/> -->
+            <yt-range-piker comkey="value" isForm="true"  isVariable="true" :value="[]" :defaultValue="[]" :showTime="true" format="YYYY-MM-DD HH:mm:ss" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="清空按钮">
+            <yt-switch comkey="allowClear" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="禁用">
+            <yt-switch comkey="disabled" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row> 
+    </yt-group-item>
+    <yt-group-item title="校验" :isOpen="false">
+        <yt-value comkey="_$$ruleKeys" :value='["requiredRule"]' :defaultValue='[]' type="array"></yt-value>
+        <yt-verification-required comkey="requiredRule" :value='{"required":false,"message":"必填","requiredIcon":true}' :defaultValue="{}" type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+</div>

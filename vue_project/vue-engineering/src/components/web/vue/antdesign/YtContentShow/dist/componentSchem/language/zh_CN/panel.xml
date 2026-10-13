@@ -1,0 +1,14 @@
+<div>
+    <yt-row>
+        <yt-input comkey="name" value="导航组件" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="_$$isUseContentWH" :value="true" type="boolean"/>
+    </yt-row>
+    <yt-group-item title="位置与尺寸">
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","w":"1000","h":"1000"}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-row title="默认页面">
+        <yt-select comkey="selectPage" value="" defaultValue="" :options='[]' type="string" v-on:changeData="change" v-on:setValue="setValue"></yt-select>
+    </yt-row>
+</div>

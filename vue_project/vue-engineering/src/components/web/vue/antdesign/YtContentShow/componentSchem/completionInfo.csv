@@ -1,0 +1,7 @@
+参数||说明||类型||默认值;
+name||"导航组件名称"||string||"";
+isShow||"控制是否显示导航组件"||boolean||true;
+isLock||"控制锁定导航组件位置"||bolean||false;
+_$$isUseContentWH||"预览时控制导航组件大小"||boolean||false;
+positionSize||"导航组件位置及宽高"||object||{"x":"0","y":"0","z":"0","w":"0","h":"0"};
+selectPage||"选中的页面"||string||"";

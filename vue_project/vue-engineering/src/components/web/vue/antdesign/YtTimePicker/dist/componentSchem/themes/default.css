@@ -1,0 +1,8 @@
+:root {
+    --web-vue-ant-yttimepicker-color: rgba(0, 0, 0, 0.88);
+    --web-vue-ant-yttimepicker-piker-color: rgba(0, 0, 0, .65);
+    --web-vue-ant-yttimepicker-piker-bg-color: #fff;
+    --web-vue-ant-yttimepicker-piker-border-color: #fff;
+    --web-vue-ant-yttimepicker-time-selected-bg-color: #bae7ff;
+    --web-vue-ant-yttimepicker-select-suffix-color: #666;
+}

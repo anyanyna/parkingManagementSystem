@@ -1,0 +1,71 @@
+:root{
+}
+.webVueAntYtRectangle {
+}
+:root{
+    --web-vue-ant-yttree-bg-color:#333;
+    --web-vue-ant-yttree-title-hover-bg-color:rgba(0, 0, 0, 0.04);
+    --web-vue-ant-yttree-title-selected-bg-color:#e6f4ff;
+    --web-vue-ant-yttree-color:rgba(0, 0, 0, 0.88);
+    --web-vue-ant-yttree-title-hover-color:inherit;
+    --web-vue-ant-yttree-title-selected-color:inherit;
+    --web-vue-ant-yttree-title-disabled-color:#00000040;
+}
+.webVueAntYtTree {
+    color: var(--web-vue-ant-yttree-color);
+}
+.webVueAntYtTree .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected, 
+.webVueAntYtTree .ant-tree .ant-tree-checkbox+span.ant-tree-node-selected {
+    background-color: var(--web-vue-ant-yttree-title-selected-bg-color);
+    color: var(--web-vue-ant-yttree-title-selected-color);
+}
+.webVueAntYtTree .ant-tree .ant-tree-node-content-wrapper:hover,
+.webVueAntYtTree .ant-tree .ant-tree-checkbox+span:hover {
+    background-color: var(--web-vue-ant-yttree-title-hover-bg-color);
+    color: var(--web-vue-ant-yttree-title-hover-color);
+
+}
+.webVueAntYtTree .ant-tree .ant-tree-treenode-disabled .ant-tree-node-content-wrapper {
+    color: var(--web-vue-ant-yttree-title-disabled-color);
+
+}
+
+:root{
+    --web-vue-ant-ytspan-color:rgba(0, 0, 0, 0.88);
+}
+.webVueAntYtSpan {
+    color: var(--web-vue-ant-ytspan-color);
+}
+:root {}
+:root{
+    --web-vue-ant-YtTable-pagination-hover-color: #1890ff;
+    --web-vue-ant-YtTable-pagination-hover-border-color: #1890ff;
+}
+.webVueAntYtTable .ant-pagination li:not(.ant-pagination-disabled):hover {
+    border-color: var(--web-vue-ant-YtTable-pagination-hover-border-color) !important;
+}
+.webVueAntYtTable .ant-pagination li:not(.ant-pagination-disabled):hover a {
+    color: var(--web-vue-ant-YtTable-pagination-hover-color) !important;
+}
+.webVueAntYtTable .ant-pagination li:not(.ant-pagination-disabled) .ant-select:hover .ant-select-selector {
+    border-color: var(--web-vue-ant-YtTable-pagination-hover-border-color) !important;
+}
+.webVueAntYtTable .ant-pagination li:not(.ant-pagination-disabled) .ant-pagination-options-quick-jumper input:hover {
+    border-color: var(--web-vue-ant-YtTable-pagination-hover-border-color) !important;
+}
+:root{
+    --web-vue-antdesign-button-font-size: 14px;
+}
+.webVueAntButton {
+    font-size: var(--web-vue-antdesign-button-font-size);
+}
+:root{
+    --web-vue-antdesign-input-font-size: 14px;
+}
+.webVueAntinput {
+    font-size: var(--web-vue-antdesign-input-font-size);
+}
+:root{
+}
+.webVueAntYtIcon {
+}

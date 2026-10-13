@@ -1,0 +1,46 @@
+
+.webVueAntYtSpanStyle{
+opacity: 1;
+color: #3D3D3D !important;
+font-family: Microsoft YaHei;
+font-size: 14px;
+font-weight: Normal;
+line-height: 20px;
+letter-spacing: 0px;
+align-content: center;
+text-decoration: none;
+font-style: normal;
+text-align: left;
+text-align-last: left;
+}
+.webVueAntYtSpanStyle span{
+text-shadow: 0px 0px 0px transparent;
+text-decoration: none;
+}
+.webVueAntYtSpanStyle.fixedHeight span{
+align-content: center;
+}
+
+.webVueAntYtSpan {
+    display: block;
+    height:100%;
+    width:100%;
+}
+.webVueAntYtSpan span{
+    word-break: break-all;
+    width: auto;
+    display: inline-block;
+    vertical-align: top; /* 根据需要调整 */
+}
+.webVueAntYtSpan.fixedHeight span{
+    height:100%;
+}
+.webVueAntYtSpan.autoHeight{
+    align-content: flex-start;
+}
+.webVueAntYtSpan.autoHeight span{
+    height: fit-content;
+}
+.webVueAntYtSpan span:focus{
+    outline: none;
+}

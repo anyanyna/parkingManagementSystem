@@ -1,0 +1,1 @@
+var e={template:'<div ref class="webVueAntYtPicture _$customClassName$_">\n    <a-image\n      :src="_$image.image$_"\n      :preview="false"\n      :style="{\n        transform:_$image.transform$_,\n        objectFit:_$image.objectFit$_\n      }"\n    />\n  </div>',clazzType:"YtPicture"};export{e as default};

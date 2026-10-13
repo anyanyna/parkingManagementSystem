@@ -1,0 +1,80 @@
+<div>
+    <yt-row>
+        <yt-value comkey="customFormItemClassName" value="webVueAntYtInputPasswordFormItem" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="customClassName" value="webVueAntYtInputPasswordStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-input comkey="name" value="密码框" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="labelName" value="标题：" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="rules" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="states" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"></yt-value>
+        <yt-value comkey="computedName" value="inputPasswordState" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row>
+        <yt-status :statuses='[]' isVariable="true" comkey="stateKey" value="2" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue" v-on:changeStatus="changeStatus"></yt-status>
+    </yt-row>
+    <yt-row>
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"292","h":"32","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row title="不透明度">
+        <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="标签" :isOpen="true">
+        <yt-row title="显示">
+            <yt-switch comkey="showLabel" checkedValue="show-label" unCheckedValue="hide-label" value="show-label" defaultValue="show-label" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="位置">
+            <yt-radio-button comkey="flexDirection" value="row" defaultValue="row" :options='[{"value":"row","label":"左"},{"value":"column","label":"上"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="文本">
+            <yt-text comkey="labelText" :value='{"fontStyle":{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","textAlign":"left","textDecoration":"none","textStyle":"normal" ,"paddingTop": "0px","paddingRight": "10px","paddingBottom": "0px","paddingLeft": "0px"}' :defaultValue='{}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="宽度">
+            <yt-input-number comkey="labelWidth" value="53px" defaultValue="" type="string" unit="px" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-button-auto-size comkey="autoSize" :value='{"autoWidth":"true"}' :defaultValue='{"autoWidth":"true"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="外观" :isOpen="true">
+        <yt-circular-bead comkey="radius" :value='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-fill comkey="fill" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"title":"填充","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#FFFFFF","fillStyle":{"title":"填充","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-line-segment comkey="border" :value='{"allow":true,"borderTop":"1px solid #CDCDCD","borderRight":"1px solid #CDCDCD","borderBottom":"1px solid #CDCDCD","borderLeft":"1px solid #CDCDCD","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#CDCDCD","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #CDCDCD","borderRight":"1px solid #CDCDCD","borderBottom":"1px solid #CDCDCD","borderLeft":"1px solid #CDCDCD","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#CDCDCD","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-shadow comkey="shadow" :value='{"allow":false,"boxShadow":"0px 0px 0px 0px #FFFFFF","shadowStyle":{"title":"阴影", "type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"0px 0px 0px 0px #FFFFFF","shadowStyle":{"title":"阴影", "type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="文字" :isOpen="true">
+        <yt-text comkey="text" :value='{"fontStyle":{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","textAlign":"left","textDecoration":"none","textStyle":"normal" ,"paddingTop": "0px","paddingRight": "10px","paddingBottom": "0px","paddingLeft": "12px"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#333333","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","textAlign":"left","textDecoration":"none","textStyle":"normal" ,"paddingTop": "0px","paddingRight": "10px","paddingBottom": "0px","paddingLeft": "12px"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-group-item title="输入提示">
+        <yt-row title="内容">
+            <yt-input comkey="placeholder" value="请输入" type="string" defaultValue="" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="文本" float="left">
+           <yt-color-picker comkey="placeholderColor" :value='{"type":"pure","color":"#999999","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#999999","gradient":"","image":"none","repeat":"norepeat","align":"left"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="功能" :isOpen="true">
+        <yt-row title="默认值">
+            <yt-input comkey="value" isForm="true" isVariable="true" value="" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="MD5加密" :span="19">
+            <yt-switch comkey="isMd5Value" :value="true" defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="字数限制">
+            <yt-input-number comkey="maxlength" :value="100" defaultValue="" type="number" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="清空按钮">
+            <yt-switch comkey="allowClear" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="密码可见图标" :span="19">
+            <yt-switch comkey="visibilityToggle" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="禁用">
+            <yt-switch comkey="disabled" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="校验" :isOpen="false">
+        <yt-value comkey="_$$ruleKeys" :value='["requiredRule","lengthRule","AiRule"]' :defaultValue='[]' type="array"></yt-value>
+        <yt-verification-required comkey="requiredRule" :value='{"required":false,"message":"必填","requiredIcon":true}' :defaultValue="{}" type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-verification-length comkey="lengthRule" :value='{"required":false,"min":"2","max":"20","message":"长度在 2 到 20 个字符"}' :defaultValue="{}" type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-verification-rules comkey="AiRule" :value='{"required":false,"message":"","ruleDescription":[]}' :defaultValue="{}" type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+</div>

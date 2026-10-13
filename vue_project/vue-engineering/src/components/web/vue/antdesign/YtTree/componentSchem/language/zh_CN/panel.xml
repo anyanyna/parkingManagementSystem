@@ -1,0 +1,93 @@
+<div>
+    <yt-row>
+        <yt-value comkey="customClassName" value="webVueAntYtTreeStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-input comkey="name" value="树" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="selectedKeys" isVariable="true" :value="[]" :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="expandedKeys" isVariable="true" :value="[]" :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="states" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"></yt-value>
+        <yt-value comkey="computedName" value="treeState" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row>
+        <yt-status :statuses='[]' isVariable="true" comkey="stateKey" value="2" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue" v-on:changeStatus="changeStatus"></yt-status>
+    </yt-row>
+    <yt-row>
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"140","h":"280","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row title="不透明度">
+        <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-group-item title="外观">
+        <yt-row title="显示图标">
+            <yt-switch comkey="showIcon" :value="true" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="显示复选框" :span="19">
+            <yt-switch comkey="checkable" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="显示连线">
+            <yt-switch comkey="showLine" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="折叠符号">
+            <yt-icon comkey="switcherIcon" :value='{"name":"箭头","src":"./staticResource/public/switchIcon.svg"}' :defaultValue='{"name":"","src":""}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:getUploadFileUrl="getUploadFileUrl"></yt-icon>
+        </yt-row>
+        <yt-row title="溢出">
+            <yt-radio-button comkey="ellipsis" value="ellipsis" defaultValue="ellipsis" :options='[{"value":"ellipsis","label":"省略号"},{"value":"newLine","label":"换行"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="高度">
+            <yt-input comkey="lineHeight" value="1.2" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="缩进">
+            <yt-input comkey="push" value="0" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="节点占满行" :span="19">
+            <yt-switch comkey="blockNode" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="文本">
+        <yt-text comkey="text" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","letterSpacing":"0px"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","letterSpacing":"0px"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-group-item>
+    <yt-tree-option
+        title="树选项"
+        comkey="options"
+        :value='{"dataSource": [{"title": "一级选项1","key": "一级选项1","disabled":false,"select": false,"iconUrl": "./staticResource/public/folder.svg","children": [{"title": "二级选项1","key": "二级选项1","disabled":false,"select": false,"iconUrl": "./staticResource/public/folder.svg","children": [{"title": "三级选项1","key": "三级选项1","disabled":false,"select": false,"iconUrl": "./staticResource/public/leaf.svg"},{"title": "三级选项2","key": "三级选项2","disabled":false,"select": false,"iconUrl": "./staticResource/public/leaf.svg"}]},{"title": "二级选项2","key": "二级选项2","disabled":false,"select": false,"iconUrl": "./staticResource/public/folder.svg","children": [{"title": "三级选项3","key": "三级选项3","disabled":false,"select": false,"iconUrl": "./staticResource/public/leaf.svg"}]},{"title": "二级选项3","key": "二级选项3","disabled":false,"select": false,"iconUrl": "./staticResource/public/folder.svg","children": [{"title": "三级选项4","key": "三级选项4","disabled":false,"select": false,"iconUrl": "./staticResource/public/leaf.svg"},{"title": "三级选项5","key": "三级选项5","disabled":false,"select": false,"iconUrl": "./staticResource/public/leaf.svg"}]}]},{"title": "一级选项2","key": "一级选项2","disabled":false,"select": false,"iconUrl": "./staticResource/public/folder.svg","children": [{"title": "二级选项4","key": "二级选项4","disabled":false,"select": false,"iconUrl": "./staticResource/public/folder.svg","children": [{"title": "三级选项6","key": "三级选项6","disabled":false,"select": false,"iconUrl": "./staticResource/public/leaf.svg"},{"title": "三级选项7","key": "三级选项7","disabled":false,"select": false,"iconUrl": "./staticResource/public/leaf.svg"}]}]}],"value": {"selectActive":"","selectData":[],"disableData": [],"disableActive":""}}'
+        :defaultValue='{}'
+        :dateTemplate="{title:'',key:'',disabled:false,select:false,iconUrl:''}"
+        :transformConfig='{key:"key",title:"title",disabled:"disabled",select:"select"}'
+        type="object"
+        v-on:changeData="change"
+        v-on:setValue="setValue"
+        :showIcon="true"
+        v-on:getUploadFileUrl="getUploadFileUrl"
+    />
+    <yt-group-item title="选中项">
+        <yt-row title="填充" float="left">
+            <yt-color-picker comkey="selectedBackgroundColor" :value='{"type":"pure","color":"#E6EFFE","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"","gradient":"","image":"none","repeat":"norepeat","align":"left"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="文本" float="left">
+            <yt-color-picker comkey="selectedTextColor" :value='{"type":"pure","color":"#595959","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#595959","gradient":"","image":"none","repeat":"norepeat","align":"left"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="悬浮项">
+        <yt-row title="填充" float="left">
+            <yt-color-picker comkey="hoverBackgroundColor" :value='{"type":"pure","color":"#f5f5f5","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#595959","gradient":"","image":"none","repeat":"norepeat","align":"left"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="文本" float="left">
+            <yt-color-picker comkey="hoverTextColor" :value='{"type":"pure","color":"rgba(0, 0, 0, 0.88)","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#595959","gradient":"","image":"none","repeat":"norepeat","align":"left"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="功能">
+        <yt-row title="禁用">
+            <yt-switch comkey="disabled" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="可拖拽">
+            <yt-switch comkey="draggable" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="手风琴模式" :span="19">
+            <yt-switch comkey="accordion" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="父子节点独立勾选" :span="19">
+            <yt-switch comkey="checkStrictly" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+</div>

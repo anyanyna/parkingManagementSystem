@@ -1,0 +1,18 @@
+.webVueAntYtTree {
+    color: var(--web-vue-ant-yttree-color);
+}
+.webVueAntYtTree .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected, 
+.webVueAntYtTree .ant-tree .ant-tree-checkbox+span.ant-tree-node-selected {
+    background-color: var(--web-vue-ant-yttree-title-selected-bg-color);
+    color: var(--web-vue-ant-yttree-title-selected-color);
+}
+.webVueAntYtTree .ant-tree .ant-tree-node-content-wrapper:hover,
+.webVueAntYtTree .ant-tree .ant-tree-checkbox+span:hover {
+    background-color: var(--web-vue-ant-yttree-title-hover-bg-color);
+    color: var(--web-vue-ant-yttree-title-hover-color);
+
+}
+.webVueAntYtTree .ant-tree .ant-tree-treenode-disabled .ant-tree-node-content-wrapper {
+    color: var(--web-vue-ant-yttree-title-disabled-color);
+
+}

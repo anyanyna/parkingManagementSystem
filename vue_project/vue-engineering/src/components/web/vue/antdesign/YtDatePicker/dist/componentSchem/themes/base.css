@@ -1,0 +1,175 @@
+.webVueAntYtDatePicker {
+    color: var(--web-vue-ant-ytdatepicker-color);
+}
+.webVueAntYtDatePicker .ant-calendar-picker-container {
+    color: var(--web-vue-ant-ytdatepicker-piker-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-bg-color);
+    border-color: var(--web-vue-ant-ytdatepicker-piker-border-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-input-wrap {
+    border-color: var(--web-vue-ant-ytdatepicker-piker-content-border-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-input {
+    color: var(--web-vue-ant-ytdatepicker-input-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-header {
+    border-color: var(--web-vue-ant-ytdatepicker-piker-content-border-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-header .ant-calendar-next-century-btn,
+.webVueAntYtDatePicker .ant-calendar-header .ant-calendar-next-decade-btn,
+.webVueAntYtDatePicker .ant-calendar-header .ant-calendar-next-month-btn,
+.webVueAntYtDatePicker .ant-calendar-header .ant-calendar-next-year-btn,
+.webVueAntYtDatePicker .ant-calendar-header .ant-calendar-prev-century-btn,
+.webVueAntYtDatePicker .ant-calendar-header .ant-calendar-prev-decade-btn,
+.webVueAntYtDatePicker .ant-calendar-header .ant-calendar-prev-month-btn,
+.webVueAntYtDatePicker .ant-calendar-header .ant-calendar-prev-year-btn {
+    color: var(--web-vue-ant-ytdatepicker-piker-header-btn-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-last-month-cell .ant-calendar-date,
+.webVueAntYtDatePicker .ant-calendar-last-month-cell .ant-calendar-date:hover,
+.webVueAntYtDatePicker .ant-calendar-next-month-btn-day .ant-calendar-date,
+.webVueAntYtDatePicker .ant-calendar-next-month-btn-day .ant-calendar-date:hover {
+    color: var(--web-vue-ant-ytdatepicker-piker-disabled-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-disabled-cell .ant-calendar-date {
+    color: var(--web-vue-ant-ytdatepicker-piker-disabled-color);
+    background-color: var(--web-vue-ant-ytdatepicker-piker-disabled-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-selected-day .ant-calendar-date {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-selected-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-disabled-cell.ant-calendar-selected-day .ant-calendar-date:before {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-disabled-selected-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-date:hover {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-hover-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-today .ant-calendar-date {
+    border-color: var(--web-vue-ant-ytdatepicker-today-border-color);
+    color: var(--web-vue-ant-ytdatepicker-today-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-footer {
+    border-color: var(--web-vue-ant-ytdatepicker-calendar-header-border-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-footer .ant-calendar-footer-btn a {
+    color: var(--web-vue-ant-ytdatepicker-today-btn-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-date {
+    color: var(--web-vue-ant-ytdatepicker-piker-color);
+
+}
+
+
+/* 时间 */
+.webVueAntYtDatePicker .ant-calendar-time-picker,
+.webVueAntYtDatePicker .ant-calendar-time-picker-inner {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-time-picker-select {
+    border-color: var(--web-vue-ant-ytdatepicker-piker-content-border-color);
+
+}
+
+.webVueAntYtDatePicker li.ant-calendar-time-picker-select-option-selected {
+    background-color: var(--web-vue-ant-ytdatepicker-time-selected-bg-color);
+}
+
+/* 月 */
+.webVueAntYtDatePicker .ant-calendar-month-panel {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-month-panel-header {
+    border-color: var(--web-vue-ant-ytdatepicker-piker-content-border-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn,
+.webVueAntYtDatePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn,
+.webVueAntYtDatePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn,
+.webVueAntYtDatePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn,
+.webVueAntYtDatePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn,
+.webVueAntYtDatePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn,
+.webVueAntYtDatePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn,
+.webVueAntYtDatePicker .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn {
+    color: var(--web-vue-ant-ytdatepicker-piker-header-btn-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-month-panel-month {
+    color: var(--web-vue-ant-ytdatepicker-piker-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month,
+.webVueAntYtDatePicker .ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month:hover {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-selected-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-header a:hover {
+    color: var(--web-vue-ant-ytdatepicker-piker-hover-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-month-panel-month:hover {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-hover-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-month-panel-cell-disabled .ant-calendar-month-panel-month,
+.webVueAntYtDatePicker .ant-calendar-month-panel-cell-disabled .ant-calendar-month-panel-month:hover {
+    color: var(--web-vue-ant-ytdatepicker-piker-disabled-color);
+    background-color: var(--web-vue-ant-ytdatepicker-piker-disabled-bg-color);
+}
+
+/* 年 */
+.webVueAntYtDatePicker .ant-calendar-year-panel-header {
+    border-color: var(--web-vue-ant-ytdatepicker-piker-content-border-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn,
+.webVueAntYtDatePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn,
+.webVueAntYtDatePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn,
+.webVueAntYtDatePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn,
+.webVueAntYtDatePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn,
+.webVueAntYtDatePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn,
+.webVueAntYtDatePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn,
+.webVueAntYtDatePicker .ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn {
+    color: var(--web-vue-ant-ytdatepicker-piker-header-btn-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year,
+.webVueAntYtDatePicker .ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year:hover {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-selected-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-header a:hover {
+    color: var(--web-vue-ant-ytdatepicker-piker-hover-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-year-panel-year:hover {
+    background-color: var(--web-vue-ant-ytdatepicker-piker-hover-bg-color);
+}
+
+.webVueAntYtDatePicker .ant-calendar-year-panel-cell-disabled .ant-calendar-year-panel-year,
+.webVueAntYtDatePicker .ant-calendar-year-panel-cell-disabled .ant-calendar-year-panel-year:hover {
+    color: var(--web-vue-ant-ytdatepicker-piker-disabled-color);
+    background-color: var(--web-vue-ant-ytdatepicker-piker-disabled-bg-color);
+}
+
+.ytCustomDatePicker .ant-picker-suffix .anticon {
+    color: var(--web-vue-ant-ytdatepicker-select-suffix-color);
+}
+

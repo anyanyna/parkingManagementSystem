@@ -1,0 +1,93 @@
+<div>
+    <yt-row>
+        <yt-value comkey="customClassName" value="webVueAntYtVerticleMenuStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-input comkey="name" value="垂直菜单" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="openKeys"  isVariable="true" :value="[]" defaultValue="" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="selectedKeys"  isVariable="true" :value="[]" defaultValue="" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-value comkey="states" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"></yt-value>
+        <yt-value comkey="computedName" value="verticalMenuState" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row>
+        <yt-status :statuses='[]' isVariable="true" comkey="stateKey" value="2" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue" v-on:changeStatus="changeStatus"></yt-status>
+    </yt-row>
+    <yt-row>
+        <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"200","h":"382","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row title="不透明度">
+        <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-row title="类型">
+        <yt-radio-button comkey="mode" value="inline" defaultValue="inline" :options='[{"value":"inline","label":"内嵌"},{"value":"vertical","label":"弹出"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+    </yt-row>
+    <yt-tree-option
+        title="菜单项"
+        comkey="options"
+        :showLight="true"
+        :value='{"dataSource":[{"iconUrl":"./staticResource/public/home.svg","key":"一级菜单1","label":"一级菜单1","title":"一级菜单1","disabled":false,"select":false},{"iconUrl":"./staticResource/public/letter.svg","key":"一级菜单2","label":"一级菜单2","title":"一级菜单2","disabled":false,"select":false,"children":[{"iconUrl":"","key":"二级菜单1","label":"二级菜单1","title":"二级菜单1","disabled":false,"select":false},{"key":"二级菜单2","label":"二级菜单2","title":"二级菜单2","disabled":false,"select":false},{"key":"二级菜单3","label":"二级菜单3","title":"二级菜单3","disabled":false,"select":false,"children":[{"key":"三级菜单1","label":"三级菜单1","title":"三级菜单1","disabled":false,"select":false},{"key":"三级菜单2","label":"三级菜单2","title":"三级菜单2","disabled":false,"select":false}]}]},{"iconUrl":"./staticResource/public/user.svg","key":"一级菜单3","label":"一级菜单3","title":"一级菜单3","disabled":false,"select":false}],"value":{"selectActive":"","selectData":[],"disableData": [],"disableActive":""}}'
+        :defaultValue='{}'
+        :transformConfig='{"key":"key","label":"label","title":"title","disabled":"disabled","select":"select","iconUrl":""}' 
+        :dateTemplate='{"key":"","label":"","title":"title","iconUrl":"","disabled":false,"select":false}'
+        :defaultIcon='{"level1":"./staticResource/public/user.svg"}'
+        type="object"
+        :showIcon="true"
+        v-on:changeData="change"
+        v-on:setValue="setValue"
+        v-on:getUploadFileUrl="getUploadFileUrl"
+    />
+    <yt-group-item title="一级菜单" :isOpen="true">
+        <yt-row title="背景">
+            <yt-fill :hideTitleShowType="true" comkey="subMenuFillStyle" :showAllow="false" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="文本">
+            <yt-text comkey="subMenuTextStyle" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","letterSpacing":"0px","textDecoration":"none","textStyle":"normal","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "20px"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","letterSpacing":"0px","textDecoration":"none","textStyle":"normal","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="高度">
+            <yt-input-number comkey="subMenuHeight" value="32px" defaultValue="32px" type="string" unit="px" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="子级菜单" :isOpen="true">
+        <yt-row title="背景">
+            <yt-fill :hideTitleShowType="true" comkey="menuFillStyle" :showAllow="false" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="文本">
+            <yt-text comkey="menuTextStyle" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","letterSpacing":"0px","textDecoration":"none","textStyle":"normal","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "20px"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","letterSpacing":"0px","textDecoration":"none","textStyle":"normal","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="高度">
+            <yt-input-number comkey="menuHeight" value="32px" defaultValue="32px" type="string" unit="px" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="缩进" :isShow="false">
+            <yt-input-number comkey="inlineIndent" :value="24" :defaultValue="24" type="number" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="选中项">
+        <yt-row title="背景">
+            <yt-fill :hideTitleShowType="true" comkey="selectedFillStyle" :showAllow="false" :value='{"allow":true,"background":"#E6EFFE","fillStyle":{"type":"pure","color":"#E6EFFE","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#E6EFFE","fillStyle":{"type":"pure","color":"#E6EFFE","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="文本" float="left">
+           <yt-color-picker comkey="selectedTextStyle" :value='{"type":"pure","color":"#3C8EFF","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#3C8EFF","gradient":"","image":"none","repeat":"norepeat","align":"left"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="悬浮项">
+        <yt-row title="背景">
+            <yt-fill :hideTitleShowType="true" comkey="hoverFillStyle" :showAllow="false" :value='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#ffffff","fillStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="文本" float="left">
+           <yt-color-picker comkey="hoverTextStyle" :value='{"type":"pure","color":"#3C8EFF","image":"none","repeat":"no-repeat","align":"center"}' :defaultValue='{"type":"pure","color":"#3C8EFF","gradient":"","image":"none","repeat":"norepeat","align":"left"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+    <yt-group-item title="外观" :isOpen="true">
+        <yt-circular-bead comkey="radius" :value='{"borderTopLeftRadius":"0px","borderTopRightRadius":"0px","borderBottomLeftRadius":"0px","borderBottomRightRadius":"0px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"0px","borderTopRightRadius":"0px","borderBottomLeftRadius":"0px","borderBottomRightRadius":"0px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        <yt-line-segment comkey="border" :value='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #d9d9d9","borderRight":"1px solid #d9d9d9","borderBottom":"1px solid #d9d9d9","borderLeft":"1px solid #d9d9d9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"type":"pure","color":"#d9d9d9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        <yt-shadow comkey="shadow" :value='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"0px 0px 0px 0px #ffffff","shadowStyle":{"type":"pure","color":"#ffffff","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+    </yt-group-item>
+    <yt-group-item title="功能" :isOpen="true">
+        <yt-row title="手风琴模式" :span="19">
+            <yt-switch comkey="singleExpand" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="父菜单可选中" :span="19">
+            <yt-switch comkey="parentSelectAble" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </yt-group-item>
+</div>

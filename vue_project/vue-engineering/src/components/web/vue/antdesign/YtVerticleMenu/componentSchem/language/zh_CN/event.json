@@ -1,0 +1,6 @@
+[
+    {"type":"init","name":"初始化","category": 1, "select": true},
+    {"type":"listenIn","name":"数据依赖", "category": 1,"oldType":"dependency"},
+    {"type":"click_to_jump","name":"选中菜单项","category": 2,"oldType":"select"},
+    {"type":"openChange","name":"收起菜单项","category": 2}
+]

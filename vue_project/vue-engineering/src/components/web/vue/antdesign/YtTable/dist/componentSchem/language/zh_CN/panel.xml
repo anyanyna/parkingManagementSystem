@@ -1,0 +1,157 @@
+<div>
+    <div class="baseConfig hidePannel">
+        <yt-row>
+            <yt-value comkey="customClassName" value="webVueAntYtTableStyle" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-value comkey="colStyleArr" :value='[{"colType": "default", "colText": {"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"50px","letterSpacing":"0px","textAlign":"center","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px", "textDecoration":"none","textStyle":"normal"}, "colWidth": "281","aiColStyle":[],"aiRequirementStyle":[],"autoSize": {"autoWidth": true}},{"colType": "default", "colText": {"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"50px","letterSpacing":"0px","textAlign":"center","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px", "textDecoration":"none","textStyle":"normal"}, "colWidth": "281","aiColStyle":[],"aiRequirementStyle":[],"autoSize": {"autoWidth": true}}]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-input comkey="name" value="表格" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-visible comkey="isShow" :value="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-lock comkey="isLock" :value="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-value comkey="selectedRows"  isVariable="true" :value="[]" :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-value comkey="states" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"></yt-value>
+            <yt-value comkey="computedName" value="modalState" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-value comkey="currentColKey" value="" defaultValue="" type="string"/>
+            <yt-value comkey="pageSize" isVariable="true" :value="10" :defaultValue="10" type="number" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-value comkey="scrollY" :value="286" :defaultValue='0' type="number" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row>
+            <yt-status :statuses='[]' isVariable="true" comkey="stateKey" value="1" defaultValue="" type="string" v-on:changeData="change" v-on:setValue="setValue" v-on:changeStatus="changeStatus"></yt-status>
+        </yt-row>
+        <yt-row>
+            <yt-local-size comkey="positionSize" :value='{"x":"0","y":"0","z":"0","w":"600","h":"400","lock":false}' :defaultValue='{"x":"0","y":"0","z":"0","w":"0","h":"0","lock":false}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="不透明度">
+            <yt-slider comkey="opacity" :value="1" type="number" :defaultValue="1" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-group-item title="外观" :isOpen="true">
+            <yt-circular-bead comkey="tableRadius" :value='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-line-segment title="描边" comkey="tableBorder" :value='{"allow":true,"borderTop":"1px solid #D9D9D9","borderRight":"1px solid #D9D9D9","borderBottom":"1px solid #D9D9D9","borderLeft":"1px solid #D9D9D9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#D9D9D9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #D9D9D9","borderRight":"1px solid #D9D9D9","borderBottom":"1px solid #D9D9D9","borderLeft":"1px solid #D9D9D9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#D9D9D9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+            <yt-shadow title="阴影" comkey="tableShadow" :value='{"allow":false,"boxShadow":"0px 0px 0px 0px #FFFFFF","shadowStyle":{"title":"阴影", "type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"boxShadow":"0px 0px 0px 0px #FFFFFF","shadowStyle":{"title":"阴影", "type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-group-item>
+        <yt-row title="内横线" :showLine="false" :style="{paddingBottom: '5px'}">
+            <yt-color-number comkey="horizontalBorder" :value='{"color":"#dcdcdc","width":1}' :defaultValue='{"color":"","width":1}' type="object" v-on:changeData="change" v-on:setValue="setValue" />
+        </yt-row>
+        <yt-row title="内竖线" :style="{paddingTop: '5px'}">
+            <yt-color-number comkey="verticalBorder" :value='{"color":"#dcdcdc","width":1}' :defaultValue='{"color":"","width":1}' type="object" v-on:changeData="change" v-on:setValue="setValue" />
+        </yt-row>
+        <yt-row title="可勾选" :showLine="false" :style="{paddingBottom: '5px'}">
+            <yt-switch comkey="canSelect" :value="true" :defaultValue="true" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="类型" :style="{paddingTop: '5px'}">
+            <yt-radio-button comkey="selectType" value="radio" defaultValue="radio" :options='[{"value":"radio","label":"单选"},{"value":"checkbox","label":"复选"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-group-item title="悬浮外观">
+            <yt-row title="背景">
+                <yt-fill comkey="hoverBackground" :hideTitleShowType="true" :showAllow="false" :value='{"allow":true,"background":"#E4EFFF","fillStyle":{"type":"pure","color":"#E4EFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#E4EFFF","fillStyle":{"type":"pure","color":"#E4EFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+            </yt-row>
+            <yt-row title="文本颜色">
+                <yt-fill comkey="hoverText" :hideTitleShowType="true" :showAllow="false" :defaultTransparent="false" :showColorType="['pure', 'linear']" :value='{"allow":true,"background":"#000000","fillStyle":{"type":"pure","color":"#000000","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#000000","fillStyle":{"type":"pure","color":"#000000","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+            </yt-row>
+        </yt-group-item>
+        <yt-group-item title="选中外观">
+            <yt-row title="背景">
+                <yt-fill comkey="selectBackground" :hideTitleShowType="true" :showAllow="false" :value='{"allow":true,"background":"#3C8EFF","fillStyle":{"type":"pure","color":"#3C8EFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#3C8EFF","fillStyle":{"type":"pure","color":"#3C8EFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+            </yt-row>
+            <yt-row title="文本颜色">
+                <yt-fill comkey="selectText" :hideTitleShowType="true" :showAllow="false" :defaultTransparent="false" :showColorType="['pure', 'linear']" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+            </yt-row>
+        </yt-group-item>
+        <yt-group-item title="功能">
+            <yt-row title="无数据显示文案">
+                <yt-input comkey="emptyText" value="暂无数据" defaultValue="暂无数据" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+            </yt-row>
+        </yt-group-item><yt-row title="表格数据" :isShow="false">
+            <yt-spreadsheet isVariable="true" comkey="data" :value='{"columns":[{"key": "id", "title": "id", "dataIndex": "id"}, {"key": "title", "title": "title", "dataIndex": "title"}, {"key": "name", "title": "name", "dataIndex": "name"}],"dataSource":[{"id": 1, "title": "标题1", "name": "标题1"},{"id": 2, "title": "标题2", "name": "标题2"}]}' :defaultValue='{"columns":[{"key": "id", "title": "id", "dataIndex": "id"}, {"key": "title", "title": "title", "dataIndex": "title"}, {"key": "name", "title": "name", "dataIndex": "name"}],"dataSource":[{"id": 1, "title": "标题1", "name": "标题1"},{"id": 2, "title": "标题2", "name": "标题2"}]}' type="object"  v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </div>
+    <!-- 表头配置 -->
+    <div class="tableHeader hidePannel">
+        <yt-row title="背景">
+            <yt-fill comkey="headerBackground" :showAllow="false" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="文本">
+            <yt-text comkey="headerText" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"50px","letterSpacing":"0px","textAlign":"center","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px", "textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","lineHeight":"50px","letterSpacing":"0px","textAlign":"center","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px", "textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="高度">
+            <yt-input-number comkey="headerHeight" value="50px" defaultValue="50px" unit="px" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </div>
+    <!-- 行配置 -->
+    <div class="tableRow hidePannel">
+        <yt-row title="背景类型">
+            <yt-radio-button comkey="rowBackgroundType" value="solid" defaultValue="solid" :options='[{"value":"solid","label":"纯色"},{"value":"zebra","label":"斑马纹"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="背景" class="rowBackground">
+            <yt-fill :hideTitleShowType="true" comkey="rowBackground" :showAllow="false" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="颜色1" class="zebraBackground">
+            <yt-fill comkey="RowBackground1" :hideTitleShowType="true" :showAllow="false" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="颜色2" class="zebraBackground">
+            <yt-fill comkey="RowBackground2" :hideTitleShowType="true" :showAllow="false" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":true,"background":"#FFFFFF","fillStyle":{"type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-row>
+        <yt-row title="高度">
+            <yt-input-number comkey="rowHeight" value="50px" defaultValue="50px" unit="px" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </div>
+    <!-- 列配置 -->
+    <div class="tableCol hidePannel">
+        <yt-row title="类型">
+            <yt-radio-button :confirmConfig='{"confirm":true,"value":"slot","antonymValue":"default"}' comkey="colType" :flush="false" value="default" defaultValue="default" :options='[{"value":"default","label":"普通"},{"value":"slot","label":"自定义"}]' type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="文本">
+            <yt-text comkey="colText" :flush="false" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"50px","letterSpacing":"0px","textAlign":"center","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px", "textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","lineHeight":"50px","letterSpacing":"0px","textAlign":"center","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px", "textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="宽度">
+            <yt-input-number comkey="colWidth" :flush="false" value="50px" defaultValue="50px" unit="px" type="string" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-button-auto-size comkey="autoSize" :value='{"autoWidth":"true"}' :defaultValue='{"autoWidth":"true"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="普通自定义" class="cunstomeColStyle">
+            <yt-ai-dialog-box comkey="aiColStyle" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+        <yt-row title="AI自定义" class="requirementStyle">
+            <yt-ai-dialog-box comkey="aiRequirementStyle" :value='[]' :defaultValue="[]" type="array" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-row>
+    </div>
+    <!-- 分页配置 -->
+    <div class="tablePagination hidePannel">
+        <yt-group-item title="外观" :isOpen="true">
+            <yt-circular-bead comkey="paginationRadius" :value='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' :defaultValue='{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px","showOneInput":true}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+            <yt-fill comkey="paginationFill" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"title":"填充","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#FFFFFF","fillStyle":{"title":"填充","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+            <yt-line-segment comkey="paginationBorder" :value='{"allow":true,"borderTop":"1px solid #D9D9D9","borderRight":"1px solid #D9D9D9","borderBottom":"1px solid #D9D9D9","borderLeft":"1px solid #D9D9D9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#D9D9D9","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #D9D9D9","borderRight":"1px solid #D9D9D9","borderBottom":"1px solid #D9D9D9","borderLeft":"1px solid #D9D9D9","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#D9D9D9","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-group-item>
+        <yt-group-item title="文本">
+            <yt-text comkey="paginationText" :value='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#000000A6","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center", "textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-group-item>
+        <yt-group-item title="选中项">
+            <yt-fill comkey="paginationSelectFill" :value='{"allow":true,"background":"#FFFFFF","fillStyle":{"title":"填充","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' :defaultValue='{"allow":false,"background":"#FFFFFF","fillStyle":{"title":"填充","type":"pure","color":"#FFFFFF","image":"none","repeat":"no-repeat","align":"auto","fillMode":"auto"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+            <yt-line-segment comkey="paginationSelectBorder" :value='{"allow":true,"borderTop":"1px solid #1890ff","borderRight":"1px solid #1890ff","borderBottom":"1px solid #1890ff","borderLeft":"1px solid #1890ff","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#1890ff","image":"none","repeat":"no-repeat","align":"center"}}' :defaultValue='{"allow":false,"borderTop":"1px solid #1890ff","borderRight":"1px solid #1890ff","borderBottom":"1px solid #1890ff","borderLeft":"1px solid #1890ff","showBorder":{"top":true,"right":true,"bottom":true,"left":true},"borderStyle":{"title":"描边","type":"pure","color":"#1890ff","image":"none","repeat":"no-repeat","align":"center"}}' type="object" v-on:changeData="change" v-on:setValue="setValue" v-on:collectValue="collectValue"/>
+        </yt-group-item>
+        <yt-group-item title="选中项文本">
+            <yt-text comkey="paginationSelectText" :value='{"fontStyle":{"type":"pure","color":"#1890ff","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px", "fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px","textDecoration":"none","textStyle":"normal"}' :defaultValue='{"fontStyle":{"type":"pure","color":"#1890ff","image":"none","repeat":"no-repeat","align":"center"},"fontFamily":"Microsoft YaHei","fontSize":"14px","fontWeight":"Normal","lineHeight":"32px","letterSpacing":"0px","textAlign":"center","paddingTop": "0px","paddingRight": "0px","paddingBottom": "0px","paddingLeft": "0px", "textDecoration":"none","textStyle":"normal"}' type="object" v-on:changeData="change" v-on:setValue="setValue"/>
+        </yt-group-item>
+        <yt-group-item title="页面条数切换器">
+            <yt-row title="显示">
+                <yt-switch comkey="showSizeChanger" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+            </yt-row>
+            <yt-option title="可切换项" comkey="pageSizeOptions" :canCancelSelect="false" type="object" :dateTemplate='{value:"",label:"",select:false}'
+                :hideExpendBtn="true"
+                :value='{"dataSource": [{"label":"10","value":10,"select":true}, {"label":"20","value":20,"select":false}, {"label":"30","value":30,"select":false}], "value": [10]}'
+                :defaultValue='{"dataSource": [{"label":"10","value":10,"select":true}, {"label":"20","value":20,"select":false}, {"label":"30","value":30,"select":false}], "value": [10]}'
+                :transformConfig='{key:"value",title:"label",disabled:"disabled",select:"select"}' v-on:changeData="change" v-on:setValue="setValue"/>
+            </yt-group-item>
+            <yt-row title="跳页器">
+                <yt-switch comkey="showQuickJumper" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+            </yt-row>
+            <yt-group-item title="功能">
+                <yt-row title="默认页">
+                    <yt-input-number comkey="current" isVariable="true" :value="1" :defaultValue="1" type="number" v-on:changeData="change" v-on:setValue="setValue"/>
+                </yt-row>
+                <yt-row title="数据总数">
+                    <yt-input-number comkey="total" isVariable="true" :value="2" :defaultValue="2" unit="" type="number" v-on:changeData="change" v-on:setValue="setValue"/>
+                </yt-row>
+                <yt-row title="禁用">
+                    <yt-switch comkey="disabled" :value="false" :defaultValue="false" type="boolean" v-on:changeData="change" v-on:setValue="setValue"/>
+                </yt-row>
+            </yt-group-item>
+    </div>
+</div>

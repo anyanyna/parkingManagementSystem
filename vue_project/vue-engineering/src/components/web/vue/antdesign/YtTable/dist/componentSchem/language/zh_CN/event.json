@@ -1,0 +1,7 @@
+[
+    {"type":"init","name":"初始化","category":"1","select": true},
+    {"type":"onTableChange","name":"分页、排序改变","category":"1","oldType":"change","parameter":"pagination","eventParameter":"pagination"},
+    {"type":"onRowClick","name":"点击行","category":"2","oldType":"click","parameter":"record","eventParameter":"record"},
+    {"type":"onRowSelect","name":"选中行","category":"2","oldType":"select","parameter":"selectedRows","eventParameter":"selectedRows"},
+    {"type":"listenIn","name":"数据依赖","category":"3","oldType":"dependency"}
+]
