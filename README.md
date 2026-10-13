@@ -3,7 +3,7 @@
 > 一套前后端分离的开源停车场运营管理平台，覆盖 **管理后台 + 车主端 H5 + 车场岗亭端 H5** 三端，
 > 提供车场配置、车牌识别、道闸对接、计费收费、资金对账、线上开票、权限管理等一站式能力。
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Dual%20License-green.svg)](LICENSE)
 [![Java](https://img.shields.io/badge/Java-11-orange.svg)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.2.2-green.svg)](https://spring.io/projects/spring-boot)
 [![Vue](https://img.shields.io/badge/Vue-3.3-brightgreen.svg)](https://vuejs.org/)
@@ -29,6 +29,7 @@
 - [默认账号](#默认账号)
 - [核心业务流程](#核心业务流程)
 - [路线图](#路线图)
+- [商业使用与联系方式](#商业使用与联系方式)
 - [参与贡献](#参与贡献)
 - [许可证](#许可证)
 
@@ -283,6 +284,20 @@ npm run serve        # H5 开发模式
 - 请勿将真实的数据库密码、Redis 密码、MinIO 密钥等提交到公开仓库，建议使用环境变量或外部配置文件（`application-{profile}.yml`）注入。
 - 首次部署后请立即修改默认管理员密码。
 
+### 第三方配置与代配服务
+
+系统完整跑通依赖以下第三方账号/参数，仓库中已全部脱敏为占位符，需自行申请或委托代配：
+
+| 类别 | 需要的参数 | 用途 |
+| --- | --- | --- |
+| 招商银行聚合支付 | `merId`、`appid`、`appSecret`、RSA 密钥 | 微信 / 支付宝在线缴费 |
+| 百度地图 / OCR | AK | 地图选址、车牌识别（可替换为其他识别服务） |
+| 慧眸相机 | `accessToken` / `appKey` / `secret` | 车牌相机任务（可选） |
+| MinIO | Endpoint / AccessKey / SecretKey | 车牌图片等对象存储 |
+| Redis / MySQL | 连接地址与账号密码 | 基础依赖 |
+
+> 我们提供**第三方参数代配与集成服务**（支付商户参数接入调试、识别服务选型对接等），详见 [商业使用与联系方式](#商业使用与联系方式)。
+
 ---
 
 ## 默认账号
@@ -333,6 +348,35 @@ sequenceDiagram
 
 ---
 
+## 商业使用与联系方式
+
+本项目采用**双重许可**（详见 [LICENSE](LICENSE)）：
+
+- **非商业用途**（个人学习、研究、评估、非营利）：依 MIT 条款**免费**使用；
+- **商业用途**（对外收费运营、商业交付、SaaS、定制开发等）：**需先获取商业授权**。
+
+### 我们提供的商业服务
+
+| 服务 | 说明 |
+| --- | --- |
+| 商业授权 | 商业使用 License 签发 |
+| 私有化部署与实施 | 环境搭建、数据初始化、上线交付 |
+| 定制开发 | 计费规则、道闸 / 相机硬件对接、发票、企微集成等二次开发 |
+| 第三方配置代配 | 支付商户参数接入、OCR / 相机服务选型与调试（见[配置说明](#配置说明)） |
+| 运维与技术支持 | 版本升级、故障排查、长期技术支持（托管 / 私有化均可） |
+
+### 联系方式
+
+欢迎通过以下方式洽谈商业合作、获取报价或技术支持：
+
+**微信（推荐）**：
+
+![微信联系方式](info/wechat-qr.jpg)
+
+> 扫码添加时请备注「停车系统」。也可通过本仓库 [GitHub Issues](../../issues) 联系。
+
+---
+
 ## 参与贡献
 
 欢迎提交 Issue 和 Pull Request！
@@ -349,6 +393,9 @@ sequenceDiagram
 
 ## 许可证
 
-本项目基于 [MIT License](LICENSE) 开源。
+本项目采用**双重许可**发布（详见 [LICENSE](LICENSE)）：
+
+- **非商业用途**：依 [MIT License](LICENSE) 条款免费使用；
+- **商业用途**：须事先获得商业授权，请通过 [商业使用与联系方式](#商业使用与联系方式) 与我联系。
 
 > 免责声明：本项目仅供学习与技术交流，投入生产环境前请自行完成安全审计与合规检查。
