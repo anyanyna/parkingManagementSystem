@@ -4801,6 +4801,7 @@ export default {
       isMapShow: false,
       // 百度地图
       ak: "", // 百度地图API密钥，请到百度地图开放平台申请后填入
+      amapKey: "", // 高德地图 Web 服务 key（逆地理编码），请到高德开放平台申请后填入
       // center: { lng: 116.404, lat: 39.915 }, // 地图中心点
       center: { lng: 120.43900868971889, lat: 36.150722061923055 }, // 地图中心点
       zoom: 15, // 地图缩放级别
@@ -6323,7 +6324,7 @@ export default {
     async handleGeoCodeAddress(lng,lat) {
       console.log("🚀 ~ fetchAndSetVariables ~ lat:", lat)
       console.log("🚀 ~ fetchAndSetVariables ~ lng:", lng)
-      let ak = '77f824161c63f67842def014d15ad866'
+      let ak = this.amapKey // 高德地图 Web 服务 key（需在 data.amapKey 中配置）
       // 根据经纬度转换地址的API请求
       axios
         .get(

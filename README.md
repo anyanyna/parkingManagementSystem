@@ -16,6 +16,7 @@
 
 - [系统简介](#系统简介)
 - [功能特性](#功能特性)
+- [外部系统集成](#外部系统集成)
 - [技术栈](#技术栈)
 - [系统架构](#系统架构)
 - [项目结构](#项目结构)
@@ -81,9 +82,58 @@
 - **设备接入**：WebSocket 对接道闸相机（上报报文解析、车牌匹配、道闸控制）、MQTT 消息
 - **识别与计费**：车牌识别记录、计费规则引擎（免费时长、阶梯费率、封顶价）
 - **支付**：在线支付与支付回调（`PaymentNotify`）、支付查询、招商银行支付工具类
-- **任务调度**：定时任务（日统计、设备数据同步、慧眸相机任务等）
+- **任务调度**：定时任务（日统计、道闸设备数据同步、萤石云摄像头同步等）
 - **存储**：MinIO 对象存储（车牌图片等）、文件上传
 - **权限**：接口级权限拦截、多角色菜单动态下发
+
+---
+
+## 外部系统集成
+
+系统与以下外部平台 / 设备对接（标注为「已接入」的均有完整调用链路）：
+
+### 支付渠道
+
+| 外部系统 | 能力 | 对接代码 | 状态 |
+| --- | --- | --- | --- |
+| 招商银行聚合支付（CMB Polypay） | 微信支付 JSAPI 下单（`onlinepay`）、支付宝 Native 扫码（`zfbqrcode`）、聚合支付回调（`aggregateNotify`）、订单查询（`orderquery`）、退款接口（已封装） | `CMBPayUrlConsant`、`ScanYardCodeService`、`PaymentNotifyController`、`PayQueryService` | 已接入 |
+| 银联云闪付 | `cloudpay` 接口地址预留 | `CMBPayUrlConsant`（仅注释） | 未启用 |
+| 微信小程序支付 | `MiniAppOrderApply` 接口地址预留 | `CMBPayUrlConsant`（仅注释） | 未启用 |
+| 派安盈（4pyun） | 历史残留代码 | `PYunService` | 未启用 |
+
+### 车牌识别与道闸设备
+
+| 外部系统 | 能力 | 对接代码 | 状态 |
+| --- | --- | --- | --- |
+| 道闸相机（WebSocket 直连） | 识别报文上报、入场 / 出场事件、车牌匹配、远程开闸 | `ws/CameraWebSocketHandler`、`ws/CapMatchServcie`、`job/BarrierGateEquipmentDataJob` | 已接入 |
+| 萤石开放平台（EZVIZ / ys7.com） | 设备与摄像头列表、直播流地址拉取 | `job/EZVIZCameraJob` | 已接入 |
+| MQTT（Eclipse Paho） | 设备物联网消息订阅 / 发布 | `job/MqttJob` | 已接入 |
+
+### 地图与定位
+
+| 外部系统 | 能力 | 对接代码 | 状态 |
+| --- | --- | --- | --- |
+| 百度地图 | 管理后台车场配置地图选点、本地搜索 | `车场配置.vue`（`vue-baidu-map-3x`，AK 自行申请） | 已接入 |
+| 高德地图 | 逆地理编码（经纬度转地址） | `车场配置.vue`（Web 服务 key 自行申请） | 已接入 |
+| 腾讯地图 | H5 端定位（`qqmap-wx-jssdk`） | `parking_h5`、`parking_owner_h5` | 已接入 |
+
+### 账号与通知
+
+| 外部系统 | 能力 | 对接代码 | 状态 |
+| --- | --- | --- | --- |
+| 微信公众号 | OAuth 授权获取 `openid`（微信 JSAPI 支付前置条件） | `ScanYardCodeController`、各 H5 端微信授权 | 已接入 |
+| 企业微信 | 企业微信环境内 H5 免登 | H5 `store/actions/login.js` | 已接入 |
+| 短信验证码登录 | Spring Security SMS 验证码登录框架（验证码存 Redis） | `security/sms/` | 框架预留，未接第三方短信通道 |
+
+### 基础设施与票务
+
+| 外部系统 | 能力 | 对接代码 | 状态 |
+| --- | --- | --- | --- |
+| MinIO | 车牌图片、发票附件等对象存储 | `application.yml`（`minio.*`） | 已接入 |
+| MySQL / Redis | 主数据库 / 缓存、验证码存储 | `application.yml` | 必需依赖 |
+| 电子发票 | 开票申请、抬头管理、附件上传（平台内部流程） | `InvoiceService`、`WebOnlineinvoicingService` | 内部实现，未对接税务 / 开票平台 |
+
+> 各外部系统的密钥与参数配置方式见 [配置说明](#配置说明)。
 
 ---
 
@@ -291,8 +341,9 @@ npm run serve        # H5 开发模式
 | 类别 | 需要的参数 | 用途 |
 | --- | --- | --- |
 | 招商银行聚合支付 | `merId`、`appid`、`appSecret`、RSA 密钥 | 微信 / 支付宝在线缴费 |
-| 百度地图 / OCR | AK | 地图选址、车牌识别（可替换为其他识别服务） |
-| 慧眸相机 | `accessToken` / `appKey` / `secret` | 车牌相机任务（可选） |
+| 微信公众号 | `appid`、`secret` | OAuth 获取 openid（微信 JSAPI 支付前置） |
+| 萤石开放平台（萤石云） | `EZVIZ_APP_KEY` / `EZVIZ_APP_SECRET` | 摄像头设备同步、直播流（可选） |
+| 百度地图 / 高德地图 | 百度 AK、高德 Web 服务 key | 后台车场地图选点、逆地理编码（`车场配置.vue`） |
 | MinIO | Endpoint / AccessKey / SecretKey | 车牌图片等对象存储 |
 | Redis / MySQL | 连接地址与账号密码 | 基础依赖 |
 
